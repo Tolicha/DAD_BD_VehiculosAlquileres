@@ -7,12 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="206,257,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="226,173,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="262,0,0,0" VerticalAlignment="Center"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="262,154,0,0" VerticalAlignment="Top" Width="100"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Menu/>
+
 
     </Grid>
 </Window>
