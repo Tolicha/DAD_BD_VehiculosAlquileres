@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Tarea_2._1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for VistaCliente.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LogicaCliente : Window
     {
-        public MainWindow()
+        public LogicaCliente()
         {
             InitializeComponent();
         }
