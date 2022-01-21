@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Tarea_2._1.Dto
 {
-    internal class Vehiculo : INotifyPropertyChanged, ICloneable, IDataErrorInfo
+    public class Vehiculo : INotifyPropertyChanged, ICloneable, IDataErrorInfo
     {
         private String marca;
         private String modelo;
@@ -36,8 +36,6 @@ namespace Tarea_2._1.Dto
             this.caducidadITV = caducidadITV;
             this.tipoVehiculo = tipoVehiculo;
         }
-
-        public string this[string columnName] => throw new NotImplementedException();
 
         public string Marca 
         {
@@ -182,6 +180,7 @@ namespace Tarea_2._1.Dto
             }
         }
 
+        public string this[string columnName] => throw new NotImplementedException();
         public string Error => throw new NotImplementedException();
 
         public event PropertyChangedEventHandler? PropertyChanged;

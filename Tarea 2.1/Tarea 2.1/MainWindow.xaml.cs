@@ -23,6 +23,8 @@ namespace Tarea_2._1
         public MainWindow()
         {
             InitializeComponent();
+            WindowVehiculo v = new WindowVehiculo();
+            v.Show();
         }
     }
 }

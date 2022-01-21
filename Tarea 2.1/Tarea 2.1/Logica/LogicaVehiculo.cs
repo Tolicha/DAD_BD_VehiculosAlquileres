@@ -8,14 +8,18 @@ using Tarea_2._1.Dto;
 
 namespace Tarea_2._1.Logica
 {
-        public class LogicaVehiculo
-        {
-        public ObservableCollection<Vehiculo> listaVehiculos;
+    public class LogicaVehiculo
+    {
+        public ObservableCollection<Vehiculo> listaVehiculos { get; set; }
         public LogicaVehiculo()
         {
             listaVehiculos = new ObservableCollection<Vehiculo>();
-            listaVehiculos.Add(new Vehiculo());
-        }
+            listaVehiculos.Add(new Vehiculo("Opel", "Corsa", "2222BBB", "A11", 50, "17numeros", 40, 20000, true, new DateTime(2024,8,1), new TipoVehiculo("coche", 5)));
+            listaVehiculos.Add(new Vehiculo("Toyota", "Prius", "3333CCC", "A12", 100, "17numeros", 50, 10000, false, new DateTime(2025, 8, 1), new TipoVehiculo("coche", 5)));
+            listaVehiculos.Add(new Vehiculo("Tanque", "Grande", "7854", "A2", 1000, "17numeros", 200, 0, true, new DateTime(2099, 1, 1), new TipoVehiculo("Tanqueta", 6)));
+            listaVehiculos.Add(new Vehiculo("Renault", "Clio", "4568TFM", "A31", 20, "17numeros", 40, 30000, false, new DateTime(2024, 12, 1), new TipoVehiculo("coche", 5)));
+            listaVehiculos.Add(new Vehiculo("Furgoneta", "Verde", "4521CDF", "A32", 120, "17numeros", 80, 120000, true, new DateTime(2023, 1, 1), new TipoVehiculo("furgoneta", 5)));
+}
 
         public void addVehiculo(Vehiculo vehiculo)
         {
