@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marci\\OneDrive\\Documentos\\2 DAM\\DAD Desarrollo De Interfaces\\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\\Tarea 2.1\\Sobremesa\\DADTarea2-1\\Tarea 2.1\\Tarea 2.1\\Tarea 2.1.csproj": {}
+    "C:\\Users\\marci\\OneDrive\\Documentos\\2 DAM\\DAD Desarrollo De Interfaces\\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\\Tarea 2.1\\DADTarea2-1\\Tarea 2.1\\Tarea 2.1\\Tarea 2.1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marci\\OneDrive\\Documentos\\2 DAM\\DAD Desarrollo De Interfaces\\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\\Tarea 2.1\\Sobremesa\\DADTarea2-1\\Tarea 2.1\\Tarea 2.1\\Tarea 2.1.csproj": {
+    "C:\\Users\\marci\\OneDrive\\Documentos\\2 DAM\\DAD Desarrollo De Interfaces\\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\\Tarea 2.1\\DADTarea2-1\\Tarea 2.1\\Tarea 2.1\\Tarea 2.1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marci\\OneDrive\\Documentos\\2 DAM\\DAD Desarrollo De Interfaces\\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\\Tarea 2.1\\Sobremesa\\DADTarea2-1\\Tarea 2.1\\Tarea 2.1\\Tarea 2.1.csproj",
+        "projectUniqueName": "C:\\Users\\marci\\OneDrive\\Documentos\\2 DAM\\DAD Desarrollo De Interfaces\\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\\Tarea 2.1\\DADTarea2-1\\Tarea 2.1\\Tarea 2.1\\Tarea 2.1.csproj",
         "projectName": "Tarea 2.1",
-        "projectPath": "C:\\Users\\marci\\OneDrive\\Documentos\\2 DAM\\DAD Desarrollo De Interfaces\\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\\Tarea 2.1\\Sobremesa\\DADTarea2-1\\Tarea 2.1\\Tarea 2.1\\Tarea 2.1.csproj",
+        "projectPath": "C:\\Users\\marci\\OneDrive\\Documentos\\2 DAM\\DAD Desarrollo De Interfaces\\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\\Tarea 2.1\\DADTarea2-1\\Tarea 2.1\\Tarea 2.1\\Tarea 2.1.csproj",
         "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marci\\OneDrive\\Documentos\\2 DAM\\DAD Desarrollo De Interfaces\\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\\Tarea 2.1\\Sobremesa\\DADTarea2-1\\Tarea 2.1\\Tarea 2.1\\obj\\",
+        "outputPath": "C:\\Users\\marci\\OneDrive\\Documentos\\2 DAM\\DAD Desarrollo De Interfaces\\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\\Tarea 2.1\\DADTarea2-1\\Tarea 2.1\\Tarea 2.1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

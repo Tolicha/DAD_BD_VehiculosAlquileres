@@ -19,10 +19,10 @@ namespace Tarea_2._1.Dto
         private int km;
         private Boolean alquilado;
         private DateTime caducidadITV;
-        private String tipoVehiculo;
+        private TipoVehiculo tipoVehiculo;
 
         public Vehiculo() { }
-        public Vehiculo(string marca, string modelo, string matricula, string plaza, double precio, string bastidor, int deposito, int km, bool alquilado, DateTime caducidadITV, string tipoVehiculo)
+        public Vehiculo(string marca, string modelo, string matricula, string plaza, double precio, string bastidor, int deposito, int km, bool alquilado, DateTime caducidadITV, TipoVehiculo tipoVehiculo)
         {
             this.marca = marca;
             this.modelo = modelo;
@@ -39,17 +39,148 @@ namespace Tarea_2._1.Dto
 
         public string this[string columnName] => throw new NotImplementedException();
 
-        public string Marca { get; set; }
-        public string Modelo { get; set; }  
-        public string Matricula { get; set; }
-        public string Plaza { get; set; }
-        public double Precio { get; set; }
-        public string Bastidor { get; set; }
-        public int Deposito { get; set; }
-        public int Km { get; set; }
-        public Boolean Alquilado { get; set; }
-        public DateTime CaducidadITV { get; set; }
-        public String TipoVehiculo { get; set; }
+        public string Marca 
+        {
+            get
+            { 
+                return marca;
+            }
+            set
+            {
+                this.marca = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("marca"));
+            }
+
+        }
+        public string Modelo
+        {
+            get
+            {
+                return modelo;
+            }
+            set
+            {
+                this.modelo = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("modelo"));
+            }
+
+        }
+        public string Matricula
+        {
+            get
+            {
+                return matricula;
+            }
+            set
+            {
+                this.matricula = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("matricula"));
+            }
+
+        }
+        public string Plaza
+        {
+            get
+            {
+                return plaza;
+            }
+            set
+            {
+                this.plaza = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("plaza"));
+            }
+
+        }
+        public double Precio
+        {
+            get
+            {
+                return precio;
+            }
+            set
+            {
+                this.precio = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("precio"));
+            }
+
+        }
+        public string Bastidor
+        {
+            get
+            {
+                return bastidor;
+            }
+            set
+            {
+                this.bastidor = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("bastidor"));
+            }
+
+        }
+        public int Deposito
+        {
+            get
+            {
+                return deposito;
+            }
+            set
+            {
+                this.deposito = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("deposito"));
+            }
+
+        }
+        public int Km
+        {
+            get
+            {
+                return km;
+            }
+            set
+            {
+                this.km = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("km"));
+            }
+
+        }
+        public Boolean Alquilado
+        {
+            get
+            {
+                return alquilado;
+            }
+            set
+            {
+                this.alquilado = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("alquilado"));
+            }
+
+        }
+        public DateTime CaducidadITV
+        {
+            get
+            {
+                return caducidadITV;
+            }
+            set
+            {
+                this.caducidadITV = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("caducidadITV"));
+            }
+
+        }
+        public TipoVehiculo TipoVehiculo 
+        {
+            get
+            {
+                return tipoVehiculo;
+            }
+            set
+            {
+                this.tipoVehiculo = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("tipoVehiculo"));
+            }
+        }
 
         public string Error => throw new NotImplementedException();
 
