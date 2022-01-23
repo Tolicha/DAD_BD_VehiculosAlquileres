@@ -10,10 +10,10 @@ namespace Tarea_2._1.Logica
 {
     public class LogicaTipoVehiculo
     {
-        public ObservableCollection<TipoVehiculo> tiposVehiculos { get; set; }
+        public List<TipoVehiculo> tiposVehiculos { get; set; }
         public LogicaTipoVehiculo()
         {
-            tiposVehiculos = new ObservableCollection<TipoVehiculo>();
+            tiposVehiculos = new List<TipoVehiculo>();
             tiposVehiculos.Add(new TipoVehiculo("Vehículo mixto", 2, 4100));
             tiposVehiculos.Add(new TipoVehiculo("Coche 5 plazas", 5));
             tiposVehiculos.Add(new TipoVehiculo("Coche 7 plazas", 7));
@@ -23,5 +23,6 @@ namespace Tarea_2._1.Logica
             tiposVehiculos.Add(new TipoVehiculo("Furgoneta", 2, 3500));
             tiposVehiculos.Add(new TipoVehiculo("Camion", 2, 7000));
         }
+
     }
 }

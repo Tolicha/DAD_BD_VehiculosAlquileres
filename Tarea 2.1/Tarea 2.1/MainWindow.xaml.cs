@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tarea_2._1.Logica;
+using Tarea_2._1.Vista;
 
 namespace Tarea_2._1
 {
@@ -20,16 +22,19 @@ namespace Tarea_2._1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private LogicaVehiculo logicaVehiculo;
         public MainWindow()
         {
             InitializeComponent();
+            logicaVehiculo = new LogicaVehiculo();
             PaginaVehiculo p = new PaginaVehiculo();
             framePrincipal.Navigate(p);
         }
 
         private void insertVehiculo_Click(object sender, RoutedEventArgs e)
         {
-
+            CrearVehiculo cv = new CrearVehiculo(logicaVehiculo);
+            cv.Show();
         }
 
         private void insertCliente_Click(object sender, RoutedEventArgs e)

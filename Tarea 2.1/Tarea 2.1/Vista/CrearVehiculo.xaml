@@ -8,27 +8,36 @@
         Title="CrearVehiculo" Height="450" Width="800">
     <Grid>
         <Label Content="Matricula" HorizontalAlignment="Left" Margin="40,27,0,0" VerticalAlignment="Top"/>
-        <TextBox Validation.Error="Validation_Error"    Text="{Binding Path = Matricula, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Matricula, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
         <Label Content="Bastidor" HorizontalAlignment="Left" Margin="212,27,0,0" VerticalAlignment="Top"/>
-        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Raza, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Bastidor, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
         <Label Content="Marca" HorizontalAlignment="Left" Margin="40,90,0,0" VerticalAlignment="Top"/>
-        <TextBox Validation.Error="Validation_Error"    Text="{Binding Path = Nombre, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Marca, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
         <Label Content="Modelo" HorizontalAlignment="Left" Margin="212,90,0,0" VerticalAlignment="Top"/>
-        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Raza, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Modelo, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
         <Label Content="Plaza" HorizontalAlignment="Left" Margin="41,139,0,0" VerticalAlignment="Top"/>
-        <TextBox Validation.Error="Validation_Error"    Text="{Binding Path = Nombre, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="comboboxPlazas" Validation.Error="Validation_Error"  HorizontalAlignment="Left" Margin="40,165,0,0" VerticalAlignment="Top" Width="56"/>
+
         <Label Content="Precio €" HorizontalAlignment="Left" Margin="212,139,0,0" VerticalAlignment="Top"/>
-        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Raza, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Precio, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+
         <Label Content="Depósito (L)" HorizontalAlignment="Left" Margin="40,191,0,0" VerticalAlignment="Top"/>
-        <TextBox Validation.Error="Validation_Error"    Text="{Binding Path = Nombre, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Deposito, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
         <Label Content="Km" HorizontalAlignment="Left" Margin="210,191,0,0" VerticalAlignment="Top"/>
-        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Raza, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Alquilado" HorizontalAlignment="Left" Margin="41,240,0,0" VerticalAlignment="Top"/>
-        <TextBox Validation.Error="Validation_Error"    Text="{Binding Path = Nombre, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Tipo de Vehículo" HorizontalAlignment="Left" Margin="212,248,0,0" VerticalAlignment="Top"/>
-        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Raza, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Fecha próxima ITV" HorizontalAlignment="Left" Margin="42,305,0,0" VerticalAlignment="Top"/>
-        <DatePicker Validation.Error="Validation_Error" Text="{Binding Path = CaducidadITV, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="42,331,0,0" VerticalAlignment="Top" />
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Km, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Tipo de Vehículo" HorizontalAlignment="Left" Margin="41,240,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboTipoVehiculo" Validation.Error="Validation_Error" Text="{Binding Path = TipoVehiculo, NotifyOnValidationError=True, ValidatesOnDataErrors=True}"  HorizontalAlignment="Left" Margin="42,271,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Fecha próxima ITV" HorizontalAlignment="Left" Margin="210,240,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="calendario" Validation.Error="Validation_Error" Text="{Binding Path = CaducidadITV, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,270,0,0" VerticalAlignment="Top" />
+
+        <Button x:Name="anadirBoton" Content="Añadir vehículo" HorizontalAlignment="Left" Margin="138,334,0,0" VerticalAlignment="Top" Click="anadirBoton_Click"/>
 
     </Grid>
 </Window>

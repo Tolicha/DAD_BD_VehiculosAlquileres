@@ -180,8 +180,25 @@ namespace Tarea_2._1.Dto
             }
         }
 
-        public string this[string columnName] => throw new NotImplementedException();
         public string Error { get { return ""; } }
+        public string this[string columnName] {
+            get
+            {
+                string result = "";
+                if (columnName == "Matricula")
+                {
+                    if (string.IsNullOrEmpty(Matricula))
+                        result = "Debe introducir la matrícula con formato 0000-XXX";
+                }
+                if (columnName == "Modelo")
+                {
+                    if (string.IsNullOrEmpty(Modelo))
+                        result = "Debe introducir el modelo del coche";
+                }
+                return result;
+            }
+        }
+        
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
