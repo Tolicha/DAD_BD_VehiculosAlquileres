@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Tarea_2._1.Dto;
+using Tarea_2._1.Logica;
 
 namespace Tarea_2._1
 {
@@ -23,11 +24,11 @@ namespace Tarea_2._1
     public partial class LogicaCliente : Window
     {
         public ObservableCollection<Cliente> listaClientes;
-        public Carnet arrayCarnet;
+
         public LogicaCliente()
         {
             listaClientes = new ObservableCollection<Cliente>();
-            listaClientes.Add(new Cliente("42112233A", new Carnet(), "María Hernández", "6667777888", "maria@gmail.com", new DateTime(1995, 02, 02)));
+            listaClientes.Add(new Cliente("42112233A", , "María Hernández", "6667777888", "maria@gmail.com", new DateTime(1995, 02, 02)));
         }
 
         public void addCLiente(Cliente cliente)

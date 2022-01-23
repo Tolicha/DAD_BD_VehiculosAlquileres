@@ -10,16 +10,16 @@ namespace Tarea_2._1.Dto
     public class Cliente : INotifyPropertyChanged, ICloneable, IDataErrorInfo
     {
         private String nif;
-        private Carnet arrayCarnet;
+        private Carnet[] arrayCarnet;
         private String nombre;
-        private int telefono;
+        private String telefono;
         private String email;
         private DateTime fechaNacimiento; 
         public Cliente()
         {
 
         }
-        public Cliente(string nif, Carnet[] arrayCarnet, string nombre, int telefono, string email, DateTime fechaNacimiento)
+        public Cliente(string nif, Carnet[] arrayCarnet, string nombre, String telefono, string email, DateTime fechaNacimiento)
         {
             this.nif = nif;
             this.arrayCarnet = arrayCarnet;
@@ -67,7 +67,7 @@ namespace Tarea_2._1.Dto
                 this.PropertyChanged(this, new PropertyChangedEventArgs("nombre"));
             }
         }
-        public int Telefono
+        public String Telefono
         {
             get
             {
