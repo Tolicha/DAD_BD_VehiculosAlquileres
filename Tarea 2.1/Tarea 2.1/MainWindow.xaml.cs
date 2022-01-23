@@ -23,8 +23,23 @@ namespace Tarea_2._1
         public MainWindow()
         {
             InitializeComponent();
-            WindowVehiculo v = new WindowVehiculo();
-            v.Show();
+            PaginaVehiculo p = new PaginaVehiculo();
+            framePrincipal.Navigate(p);
+        }
+
+        private void insertVehiculo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void insertCliente_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void insertAlquiler_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

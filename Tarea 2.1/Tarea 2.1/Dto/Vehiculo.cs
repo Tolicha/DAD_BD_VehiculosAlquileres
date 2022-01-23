@@ -181,7 +181,7 @@ namespace Tarea_2._1.Dto
         }
 
         public string this[string columnName] => throw new NotImplementedException();
-        public string Error => throw new NotImplementedException();
+        public string Error { get { return ""; } }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

@@ -20,8 +20,8 @@ namespace Tarea_2._1.Logica
             tiposVehiculos.Add(new TipoVehiculo("Coche 9 plazas", 9));
             tiposVehiculos.Add(new TipoVehiculo("Guagua micro", 9));
             tiposVehiculos.Add(new TipoVehiculo("Guagua grande", 54));
-            tiposVehiculos.Add(new TipoVehiculo("Vehiculo carga furgoneta", 2, 3500));
-            tiposVehiculos.Add(new TipoVehiculo("Vehiculo camion", 2, 7000));
+            tiposVehiculos.Add(new TipoVehiculo("Furgoneta", 2, 3500));
+            tiposVehiculos.Add(new TipoVehiculo("Camion", 2, 7000));
         }
     }
 }

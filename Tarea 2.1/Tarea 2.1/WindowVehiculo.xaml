@@ -11,15 +11,15 @@
         <Menu Margin="0,10,0,0" HorizontalAlignment="Center" Width="780" Height="30" VerticalAlignment="Top">
             <MenuItem Header="Vehiculo" Height="26" Width="68" FontSize="14">
                 <MenuItem x:Name="insertVehiculo" Header="Introducir Vehiculo"/>
-                <MenuItem x:Name="insertVehiculo" Header="Modificar Vehiculo"/>
+            </MenuItem>
+            <MenuItem Header="Cliente" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694">
+                <MenuItem x:Name="insertCliente" Header="Introducir Cliente"/>
+            </MenuItem>
+            <MenuItem Header="Alquiler" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694">
+                <MenuItem x:Name="insertAlquiler" Header="Nuevo Alquiler"/>
             </MenuItem>
         </Menu>
-        <Menu Margin="20,10,0,0" HorizontalAlignment="Center" Width="780" Height="30" VerticalAlignment="Top">
-            <MenuItem Header="Cliente" Height="26" Width="68" FontSize="14">
-                <MenuItem x:Name="insertVehiculo" Header="Introducir Cliente"/>
-                <MenuItem x:Name="insertVehiculo" Header="Modificar Cliente"/>
-            </MenuItem>
-        </Menu>
+       
         <Button Content="Eliminar" HorizontalAlignment="Left" Height="22" Margin="740,371,0,0" VerticalAlignment="Top"/>
 
     </Grid>
