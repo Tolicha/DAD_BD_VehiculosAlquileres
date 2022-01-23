@@ -10,6 +10,9 @@
     <Compile Update="Vista\CrearVehiculo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Vista\PaginaAlquiler.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Vista\PaginaVehiculo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\CrearVehiculo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vista\PaginaAlquiler.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\PaginaVehiculo.xaml">

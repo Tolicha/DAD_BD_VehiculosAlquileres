@@ -22,11 +22,12 @@ namespace Tarea_2._1
     public partial class PaginaVehiculo : Page
     {
         private LogicaVehiculo logicaVehiculo;
-        public PaginaVehiculo()
+        public PaginaVehiculo(LogicaVehiculo logica)
         {
             InitializeComponent();
-            logicaVehiculo = new LogicaVehiculo();
+            logicaVehiculo = logica ;
             DatagridVehiculo.DataContext = logicaVehiculo;
         }
+
     }
 }

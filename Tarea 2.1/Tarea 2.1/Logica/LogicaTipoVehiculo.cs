@@ -23,6 +23,5 @@ namespace Tarea_2._1.Logica
             tiposVehiculos.Add(new TipoVehiculo("Furgoneta", 2, 3500));
             tiposVehiculos.Add(new TipoVehiculo("Camion", 2, 7000));
         }
-
     }
 }

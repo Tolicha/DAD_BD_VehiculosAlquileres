@@ -9,16 +9,22 @@
 
     <Grid>
         <Menu Margin="0,10,0,0" HorizontalAlignment="Center" Width="780" Height="30" VerticalAlignment="Top">
-            <MenuItem Header="Vehiculo" Height="26" Width="68" FontSize="14">
+            <MenuItem Header="Vehiculo" Height="26" Width="68" FontSize="14" GotFocus="MenuItem_GotFocus">
                 <MenuItem x:Name="insertVehiculo" Header="Introducir Vehiculo" Click="insertVehiculo_Click"/>
+                <MenuItem x:Name="updateVehiculo" Header="Modificar Vehiculo" Click="updateVehiculo_Click"/>
+                <MenuItem x:Name="deleteVehiculo" Header="Eliminar Vehiculo"/>
             </MenuItem>
             <MenuItem Header="Cliente" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694">
                 <MenuItem x:Name="insertCliente" Header="Introducir Cliente" Click="insertCliente_Click"/>
+                <MenuItem x:Name="updateCliente" Header="Modificar Cliente"/>
+                <MenuItem x:Name="deleteCliente" Header="Eliminar Cliente"/>
             </MenuItem>
-            <MenuItem Header="Alquiler" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694">
+            <MenuItem Header="Alquiler" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694" GotFocus="MenuItem_GotFocus_1">
                 <MenuItem x:Name="insertAlquiler" Header="Nuevo Alquiler" Click="insertAlquiler_Click"/>
+                <MenuItem x:Name="updateAlquiler" Header="Modificar Alquiler"/>
+                <MenuItem x:Name="deleteAlquiler" Header="Eliminar Alquiler"/>
             </MenuItem>
         </Menu>
-        <Frame x:Name="framePrincipal" Content="Frame" Margin="0,59,0,0" HorizontalAlignment="Center" Width="714" Height="350" VerticalAlignment="Top"/>
+        <Frame x:Name="framePrincipal" Margin="0,59,0,0" HorizontalAlignment="Center" Width="714" Height="350" VerticalAlignment="Top" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

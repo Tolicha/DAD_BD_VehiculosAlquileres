@@ -18,11 +18,11 @@ namespace Tarea_2._1.Dto
         private int deposito;
         private int km;
         private Boolean alquilado;
-        private DateTime caducidadITV;
-        private TipoVehiculo tipoVehiculo;
+        private DateTimeOffset caducidadITV;
+        private String tipoVehiculo;
 
         public Vehiculo() { }
-        public Vehiculo(string marca, string modelo, string matricula, string plaza, double precio, string bastidor, int deposito, int km, bool alquilado, DateTime caducidadITV, TipoVehiculo tipoVehiculo)
+        public Vehiculo(string marca, string modelo, string matricula, string plaza, double precio, string bastidor, int deposito, int km, bool alquilado, DateTimeOffset caducidadITV, String tipoVehiculo)
         {
             this.marca = marca;
             this.modelo = modelo;
@@ -154,7 +154,7 @@ namespace Tarea_2._1.Dto
             }
 
         }
-        public DateTime CaducidadITV
+        public DateTimeOffset CaducidadITV
         {
             get
             {
@@ -167,7 +167,7 @@ namespace Tarea_2._1.Dto
             }
 
         }
-        public TipoVehiculo TipoVehiculo 
+        public String TipoVehiculo 
         {
             get
             {
@@ -204,7 +204,7 @@ namespace Tarea_2._1.Dto
 
         public object Clone()
         {
-            throw new NotImplementedException();
+            return this.MemberwiseClone();
         }
     }
 }

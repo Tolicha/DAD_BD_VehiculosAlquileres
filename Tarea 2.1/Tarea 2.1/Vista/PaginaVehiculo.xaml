@@ -9,7 +9,7 @@
       Title="PaginaVehiculo">
 
     <Grid>
-        <DataGrid x:Name="DatagridVehiculo" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaVehiculos}" RenderTransformOrigin="0.572,0.512">
+        <DataGrid x:Name="DatagridVehiculo" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaVehiculos}" RenderTransformOrigin="0.572,0.512" GotFocus="DatagridVehiculo_GotFocus" Margin="0,0,0,-116">
         
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Marca" Binding="{Binding Path = Marca}" />
@@ -21,11 +21,10 @@
                 <DataGridTextColumn Header="Cod. Bastidor" Binding="{Binding Path = Bastidor}" />
                 <DataGridTextColumn Header="Depósito (L)" Binding="{Binding Path = Deposito}" />
                 <DataGridTextColumn Header="Kms" Binding="{Binding Path = Km}" />
-                <DataGridTextColumn Header="Fecha Fin ITV" Binding="{Binding Path = CaducidadITV}" />
+                <DataGridTextColumn Header="Fecha Fin ITV" Binding="{Binding Path = CaducidadITV, StringFormat={}{0:dd/MM/yyyy}}" />
                 <DataGridTextColumn Header="Tipo" Binding="{Binding Path = TipoVehiculo}" />
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Eliminar" HorizontalAlignment="Left" Height="22" Margin="652,363,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
