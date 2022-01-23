@@ -19,3 +19,5 @@ C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-wi
 C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\ref\Tarea 2.1.dll
 C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Tarea 2.1.pdb
 C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Tarea 2.1.genruntimeconfig.cache
+C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\WindowCliente.g.cs
