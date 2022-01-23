@@ -9,7 +9,6 @@ namespace Tarea_2._1.Dto
 {
     public class Carnet : INotifyPropertyChanged, ICloneable, IDataErrorInfo
     {
-        private String titular;
         public enum Tipo { AM, A1, A2, A, B, C1, C, D1, D };
         private Tipo tipo;
         private DateTime fechaExpedicion;
@@ -18,28 +17,13 @@ namespace Tarea_2._1.Dto
         {
 
         }
-        public Carnet(String titular,  Tipo tipo, DateTime fechaExpedicion, DateTime fechaCaducidad)
+        public Carnet(Tipo tipo, DateTime fechaExpedicion, DateTime fechaCaducidad)
         {
-            this.titular = titular;
             this.tipo = tipo;
             this.fechaExpedicion = fechaExpedicion;
             this.fechaCaducidad = fechaCaducidad;
         }
-
         public string this[string columnName] => throw new NotImplementedException();
-
-        public String Titular
-        {
-            get
-            {
-                return titular;
-            }
-            set
-            {
-                this.titular = value;
-                this.PropertyChanged(this, new PropertyChangedEventArgs("titular"));
-            }
-        }
         public DateTime FechaExpedicion
         {
             get
@@ -64,7 +48,6 @@ namespace Tarea_2._1.Dto
                 this.PropertyChanged(this, new PropertyChangedEventArgs("fechaCaducidad"));
             }
         }
-
         public string Error => throw new NotImplementedException();
 
         public event PropertyChangedEventHandler? PropertyChanged;

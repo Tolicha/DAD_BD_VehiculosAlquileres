@@ -10,7 +10,7 @@ namespace Tarea_2._1.Dto
     public class Cliente : INotifyPropertyChanged, ICloneable, IDataErrorInfo
     {
         private String nif;
-        private Carnet[] arrayCarnet;
+        private Carnet carnet;
         private String nombre;
         private String telefono;
         private String email;
@@ -19,18 +19,16 @@ namespace Tarea_2._1.Dto
         {
 
         }
-        public Cliente(string nif, Carnet[] arrayCarnet, string nombre, String telefono, string email, DateTime fechaNacimiento)
+        public Cliente(string nif, Carnet carnet, string nombre, String telefono, string email, DateTime fechaNacimiento)
         {
             this.nif = nif;
-            this.arrayCarnet = arrayCarnet;
+            this.carnet = carnet;
             this.nombre = nombre;
             this.telefono = telefono;
             this.email = email;
             this.fechaNacimiento = fechaNacimiento;
         }
-
         public string this[string columnName] => throw new NotImplementedException();
-
         public String Nif
         {
             get
@@ -43,15 +41,15 @@ namespace Tarea_2._1.Dto
                 this.PropertyChanged(this, new PropertyChangedEventArgs("nif"));
             }
         }
-        public Carnet[] ArrayCarnet
+        public Carnet Carnet
         {
             get
             {
-                return arrayCarnet;
+                return carnet;
             }
             set
             {
-                this.arrayCarnet = value;
+                this.carnet = value;
                 this.PropertyChanged(this, new PropertyChangedEventArgs("arrayCarnet"));
             }
         }
@@ -103,11 +101,9 @@ namespace Tarea_2._1.Dto
                 this.PropertyChanged(this, new PropertyChangedEventArgs("fechaNacimiento"));
             }
         }
-
         public string Error => throw new NotImplementedException();
 
         public event PropertyChangedEventHandler? PropertyChanged;
-
         public object Clone()
         {
             throw new NotImplementedException();
