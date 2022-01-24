@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Tarea_2._1
@@ -23,8 +22,13 @@ namespace Tarea_2._1
         public MainWindow()
         {
             InitializeComponent();
-            WindowCliente c = new WindowCliente();
-            c.Show();
+            PaginaCliente cliente = new PaginaCliente();
+            //framePrincipal.navigate(cliente);
+        }
+
+        private void Frame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+
         }
     }
 }
