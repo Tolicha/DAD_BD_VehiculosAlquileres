@@ -23,7 +23,7 @@
         <DatePicker x:Name="calendarioNacimiento"  Validation.Error="Validation_Error" SelectedDate="{Binding Path = FechaNacimiento, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="300,60,0,0" VerticalAlignment="Top" Width="150" />
 
         <Label Content="Tipo de Carnet" HorizontalAlignment="Left" Margin="300,100,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboTipoCarnet" Validation.Error="Validation_Error" Text="{Binding Path = TipoCarnet, NotifyOnValidationError=True, ValidatesOnDataErrors=True}"  HorizontalAlignment="Left" Margin="300,130,0,0" VerticalAlignment="Top" Width="150"/>
+        <ComboBox x:Name="comboTipoCarnet" Validation.Error="Validation_Error" Text="{Binding Path = Carnet, NotifyOnValidationError=True, ValidatesOnDataErrors=True}"  HorizontalAlignment="Left" Margin="300,130,0,0" VerticalAlignment="Top" Width="150"/>
 
         <Label Content="Fecha de expedición" HorizontalAlignment="Left" Margin="300,170,0,0" VerticalAlignment="Top"/>
         <DatePicker x:Name="calendarioExpedicion"  Validation.Error="Validation_Error" SelectedDate="{Binding Path = FechaExpedicion, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="300,200,0,0" VerticalAlignment="Top" Width="150" />

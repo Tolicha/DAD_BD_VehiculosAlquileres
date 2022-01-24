@@ -11,7 +11,7 @@ namespace Tarea_2._1.Dto
     {
         private String nif;
         private Carnet carnet;
-        private string tipoCarnet;
+        private string TipoCarnet;
         private String nombre;
         private String telefono;
         private String email;
@@ -55,13 +55,11 @@ namespace Tarea_2._1.Dto
             }
         }
 
-        public string TipoCarnet
+        public string tipoCarnet
         {
-            get => Carnet.ToString();
-            set
-            {
-                this.tipoCarnet = value;
-                this.PropertyChanged(this, new PropertyChangedEventArgs("arrayCarnet"));
+            get 
+            { 
+                return Carnet.ToString();
             }
         }
 
@@ -124,8 +122,6 @@ namespace Tarea_2._1.Dto
                     if (string.IsNullOrEmpty(Nombre))
                         result = "Debe introducir el nombre del cliente";
                 }
-
-
                 return result;
             }
 
