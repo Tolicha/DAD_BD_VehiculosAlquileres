@@ -1,0 +1,26 @@
+﻿<Page x:Class="Tarea_2._1.PaginaCliente"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tarea_2._1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PaginaCliente">
+    <Grid>
+        <DataGrid x:Name="DatagridCliente" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaClientes}" RenderTransformOrigin="0.572,0.512" Margin="0,0,0,-116">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Path = Nombre}" />
+                <DataGridTextColumn Header="Nif" Binding="{Binding Path = Nif}" />
+                <DataGridTextColumn Header="Telefono" Binding="{Binding Path = Telefono}" />
+                <DataGridTextColumn Header="Email" Binding="{Binding Path = Email}" />
+                <DataGridTextColumn Header="Fecha de Nacimiento" Binding="{Binding Path = FechaNacimiento, StringFormat={}{0:dd/MM/yyyy}}" />
+                <DataGridTextColumn Header="Tipo de Carnet" Binding="{Binding Path = TipoCarnet}" />
+                <DataGridTextColumn Header="Fecha de Expedición" Binding="{Binding Path = FechaExpedicion, StringFormat={}{0:dd/MM/yyyy}}" />
+                <DataGridTextColumn Header="Fecha de Caducidad" Binding="{Binding Path = FechaCaducidad, StringFormat={}{0:dd/MM/yyyy}}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Page>
