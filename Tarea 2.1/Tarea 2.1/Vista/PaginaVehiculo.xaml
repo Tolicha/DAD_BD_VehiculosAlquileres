@@ -22,10 +22,12 @@
                 <DataGridTextColumn Header="Depósito (L)" Binding="{Binding Path = Deposito}" />
                 <DataGridTextColumn Header="Kms" Binding="{Binding Path = Km}" />
                 <DataGridTextColumn Header="Fecha Fin ITV" Binding="{Binding Path = CaducidadITV, StringFormat={}{0:dd/MM/yyyy}}" />
-                <DataGridTextColumn Header="Tipo" Binding="{Binding Path = TipoVehiculo}" />
+                <DataGridTextColumn Header="Tipo" Binding="{Binding Path = TipoVehiculo.NombreTipo}" />
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="Lista de vehículos" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18">
+            <Label Content="Lista de Vehiculos"/>
+        </Label>
 
     </Grid>
 </Page>

@@ -22,6 +22,7 @@ namespace Tarea_2._1.Vista
     public partial class CrearVehiculo : Window
     {
         private Vehiculo vehiculo;
+        private TipoVehiculo tipoVehiculo;
         private LogicaVehiculo logicaVehiculo;
         private int errores;
         private Boolean modificar;
@@ -84,16 +85,28 @@ namespace Tarea_2._1.Vista
         }
         private void anadirBoton_Click(object sender, RoutedEventArgs e)
         {
+            //PARA INTRODUCIR EL OBJETO
+            foreach (TipoVehiculo tv in logicaTipoVehiculo.tiposVehiculos) {
+                if (comboTipoVehiculo.SelectedItem.ToString().Contains(tv.ToString())) 
+                {
+                    this.vehiculo.TipoVehiculo = tv;
+                }
+            }
+
             if (modificar) 
             {
                 this.vehiculo.Alquilado = false;
                 this.vehiculo.CaducidadITV = (DateTimeOffset)calendario.SelectedDate;
+                //tipoVehiculo = (TipoVehiculo)comboTipoVehiculo.SelectedItem;
+                //this.vehiculo.TipoVehiculo = tipoVehiculo;
                 logicaVehiculo.updateVehiculo(this.vehiculo, this.pos);
             }
             else
             {
                 this.vehiculo.Alquilado = false;//Todos los vehículos creados no estarán alquilados
                 this.vehiculo.CaducidadITV = (DateTimeOffset)calendario.SelectedDate;
+                //tipoVehiculo = (TipoVehiculo) comboTipoVehiculo.SelectedItem;
+                //this.vehiculo.TipoVehiculo = tipoVehiculo;
                 logicaVehiculo.addVehiculo(this.vehiculo);
             }
 

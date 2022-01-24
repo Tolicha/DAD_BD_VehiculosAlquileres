@@ -20,10 +20,10 @@ namespace Tarea_2._1.Dto
         private int km;
         private Boolean alquilado;
         private DateTimeOffset caducidadITV;
-        private String tipoVehiculo;
+        private TipoVehiculo tipoVehiculo;
 
         public Vehiculo() { }
-        public Vehiculo(string marca, string modelo, string matricula, string plaza, double precio, string bastidor, int deposito, int km, bool alquilado, DateTimeOffset caducidadITV, String tipoVehiculo)
+        public Vehiculo(string marca, string modelo, string matricula, string plaza, double precio, string bastidor, int deposito, int km, bool alquilado, DateTimeOffset caducidadITV, TipoVehiculo tipoVehiculo)
         {
             this.marca = marca;
             this.modelo = modelo;
@@ -168,7 +168,7 @@ namespace Tarea_2._1.Dto
             }
 
         }
-        public String TipoVehiculo 
+        public TipoVehiculo TipoVehiculo 
         {
             get
             {

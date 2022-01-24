@@ -11,16 +11,15 @@ namespace Tarea_2._1.Dto
     {
         private String nif;
         private Carnet carnet;
-        private string TipoCarnet;
         private String nombre;
         private String telefono;
         private String email;
-        private DateTime fechaNacimiento; 
+        private DateTimeOffset fechaNacimiento; 
         public Cliente()
         {
 
         }
-        public Cliente(string nif, Carnet carnet, string nombre, String telefono, string email, DateTime fechaNacimiento)
+        public Cliente(string nif, Carnet carnet, string nombre, String telefono, string email, DateTimeOffset fechaNacimiento)
         {
             this.nif = nif;
             this.carnet = carnet;
@@ -99,7 +98,7 @@ namespace Tarea_2._1.Dto
                 this.PropertyChanged(this, new PropertyChangedEventArgs("email"));
             }
         }
-        public DateTime FechaNacimiento
+        public DateTimeOffset FechaNacimiento
         {
             get
             {

@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PaginaCliente">
     <Grid>
-        <DataGrid x:Name="DatagridCliente" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaClientes}" RenderTransformOrigin="0.572,0.512" Margin="0,0,0,-116">
+        <DataGrid x:Name="DatagridCliente" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaClientes}" RenderTransformOrigin="0.572,0.512" Margin="0,77,10,10">
 
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nombre" Binding="{Binding Path = Nombre}" />
@@ -16,11 +16,12 @@
                 <DataGridTextColumn Header="Telefono" Binding="{Binding Path = Telefono}" />
                 <DataGridTextColumn Header="Email" Binding="{Binding Path = Email}" />
                 <DataGridTextColumn Header="Fecha de Nacimiento" Binding="{Binding Path = FechaNacimiento, StringFormat={}{0:dd/MM/yyyy}}" />
-                <DataGridTextColumn Header="Tipo de Carnet" Binding="{Binding Path = TipoCarnet}" />
-                <DataGridTextColumn Header="Fecha de Expedición" Binding="{Binding Path = FechaExpedicion, StringFormat={}{0:dd/MM/yyyy}}" />
-                <DataGridTextColumn Header="Fecha de Caducidad" Binding="{Binding Path = FechaCaducidad, StringFormat={}{0:dd/MM/yyyy}}" />
+                <DataGridTextColumn Header="Tipo de Carnet" Binding="{Binding Path = Carnet.TipoCarnet}" />
+                <DataGridTextColumn Header="Fecha de Expedición" Binding="{Binding Path = Carnet.FechaExpedicion, StringFormat={}{0:dd/MM/yyyy}}" />
+                <DataGridTextColumn Header="Fecha de Caducidad" Binding="{Binding Path = Carnet.FechaCaducidad, StringFormat={}{0:dd/MM/yyyy}}" />
             </DataGrid.Columns>
         </DataGrid>
+        <Label Content="Lista de clientes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18"/>
 
     </Grid>
 </Page>

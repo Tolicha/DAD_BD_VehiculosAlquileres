@@ -22,6 +22,7 @@ namespace Tarea_2._1.Paginas
     public partial class CrearCliente : Window
     {
         private Cliente cliente;
+        private Carnet carnet;
         private LogicaCliente logicaCliente;
         private int errores;
         private Boolean modificar;
@@ -80,6 +81,7 @@ namespace Tarea_2._1.Paginas
             }
             else
             {
+                carnet = new Carnet(Carnet.Tipo.A1,(DateTimeOffset)calendarioExpedicion.SelectedDate, (DateTimeOffset)calendarioCaducidad.SelectedDate);
                 logicaCliente.addCliente(this.cliente);
             }
 
