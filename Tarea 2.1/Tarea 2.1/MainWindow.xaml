@@ -8,17 +8,17 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Menu Margin="0,10,0,0" HorizontalAlignment="Center" Width="780" Height="30" VerticalAlignment="Top">
-            <MenuItem x:Name="vehiculo" Header="Vehiculo" Height="26" Width="68" FontSize="14" Click="menu_Click">
+            <MenuItem x:Name="vehiculo" Header="Vehiculo" Height="26" Width="68" FontSize="14" GotFocus="menuItem_gotFocus">
                 <MenuItem x:Name="insertVehiculo" Header="Introducir Vehiculo" Click="menuItem_Click"/>
                 <MenuItem x:Name="updateVehiculo" Header="Modificar Vehiculo" Click="menuItem_Click"/>
                 <MenuItem x:Name="deleteVehiculo" Header="Eliminar Vehiculo"/>
             </MenuItem>
-            <MenuItem x:Name="cliente" Header="Cliente" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694" Click="menu_Click">
+            <MenuItem x:Name="cliente" Header="Cliente" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694" GotFocus="menuItem_gotFocus" Click="menu_Click">
                 <MenuItem x:Name="insertCliente" Header="Introducir Cliente" Click="menuItem_Click"/>
                 <MenuItem x:Name="updateCliente" Header="Modificar Cliente" Click="menuItem_Click"/>
                 <MenuItem x:Name="deleteCliente" Header="Eliminar Cliente"/>
             </MenuItem>
-            <MenuItem x:Name="alquiler" Header="Alquiler" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694" Click="menu_Click">
+            <MenuItem x:Name="alquiler" Header="Alquiler" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694" GotFocus="menuItem_gotFocus" Click="menu_Click">
                 <MenuItem x:Name="insertAlquiler" Header="Nuevo Alquiler" Click="menuItem_Click"/>
                 <MenuItem x:Name="updateAlquiler" Header="Modificar Alquiler" Click="menuItem_Click"/>
                 <MenuItem x:Name="deleteAlquiler" Header="Eliminar Alquiler"/>

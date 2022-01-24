@@ -11,7 +11,7 @@ namespace Tarea_2._1.Logica
 {
     public partial class LogicaAlquiler : Window
     {
-        public ObservableCollection<Alquiler> listaAlquileres;
+        public ObservableCollection<Alquiler> listaAlquileres { get; set; }
 
         public LogicaAlquiler()
         {
