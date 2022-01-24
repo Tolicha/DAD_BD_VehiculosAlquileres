@@ -8,15 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Menu Margin="0,10,0,0" HorizontalAlignment="Center" Width="780" Height="Auto" VerticalAlignment="Top">
-            <MenuItem Header="Vehiculo" Width="Auto" Height="30" FontSize="14">
+            <MenuItem x:Name="vehiculo" Header="Vehiculo" Width="Auto" Height="30" FontSize="14" Click="menu_Click">
                 <MenuItem x:Name="insertVehiculo" Header="Introducir Vehiculo" Click="menuItem_Click"/>
                 <MenuItem x:Name="updateVehiculo" Header="Modificar Vehiculo" Click="menuItem_Click"/>
             </MenuItem>
-            <MenuItem Header="Cliente" Width="Auto" Height="30" FontSize="14">
+            <MenuItem x:Name="cliente" Header="Cliente" Width="Auto" Height="30" FontSize="14" Click="menu_Click">
                 <MenuItem x:Name="insertCliente" Header="Introducir Cliente" Click="menuItem_Click"/>
                 <MenuItem x:Name="updateCliente" Header="Modificar Cliente" Click="menuItem_Click"/>
             </MenuItem>
-            <MenuItem Header="Alquiler" Width="Auto" Height="30" FontSize="14">
+            <MenuItem x:Name="alquiler" Header="Alquiler" Width="Auto" Height="30" FontSize="14" Click="menu_Click">
                 <MenuItem x:Name="insertAlquiler" Header="Introducir Alquiler" Click="menuItem_Click"/>
                 <MenuItem x:Name="updateAlquiler" Header="Modificar Alquiler" Click="menuItem_Click"/>
             </MenuItem>

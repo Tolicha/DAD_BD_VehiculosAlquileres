@@ -24,5 +24,7 @@ namespace Tarea_2._1
         {
             InitializeComponent();
         }
+
+        
     }
 }

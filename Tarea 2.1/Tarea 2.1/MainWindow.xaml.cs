@@ -22,17 +22,30 @@ namespace Tarea_2._1
         public MainWindow()
         {
             InitializeComponent();
-            PaginaCliente cliente = new PaginaCliente();
-            //framePrincipal.navigate(cliente);
         }
+        private void menu_Click(object sender, RoutedEventArgs e)
+        {
+            if ((((MenuItem)sender).Name).Equals(vehiculo))
+            {
 
+            }
+            else if ((((MenuItem)sender).Name).Equals(cliente))
+            {
+                PaginaCliente cliente = new PaginaCliente();
+                
+            }
+            else if ((((MenuItem)sender).Name).Equals(alquiler))
+            {
+
+            }
+        }
         private void menuItem_Click(object sender, RoutedEventArgs e)
         {
             Window ventanaCrear = new Window();
             ventanaCrear.Show();
             if ((((MenuItem)sender).Name).Equals(insertVehiculo)) 
             {
-
+                
             } else if ((((MenuItem)sender).Name).Equals(updateVehiculo))
             {
 
