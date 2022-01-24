@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Tarea_2._1.Dto
@@ -187,13 +188,43 @@ namespace Tarea_2._1.Dto
                 string result = "";
                 if (columnName == "Matricula")
                 {
-                    if (string.IsNullOrEmpty(Matricula))
+                    if (string.IsNullOrEmpty(Matricula) || new Regex("[0-9]{4}-[BCDFGHJKLMNPRSTVWXYZ]{3}").IsMatch(Matricula))
                         result = "Debe introducir la matrícula con formato 0000-XXX";
                 }
                 if (columnName == "Modelo")
                 {
                     if (string.IsNullOrEmpty(Modelo))
                         result = "Debe introducir el modelo del coche";
+                }
+                if (columnName == "Marca")
+                {
+                    if (string.IsNullOrEmpty(Matricula))
+                        result = "Debe introducir la marca del vehículo";
+                }
+                if (columnName == "Plaza")
+                {
+                    if (string.IsNullOrEmpty(Modelo))
+                        result = "Introduce la plaza del vehículo";
+                }
+                if (columnName == "Precio")
+                {
+                    if (string.IsNullOrEmpty(Matricula))
+                        result = "Debe introducir el PVP del alquiler";
+                }
+                if (columnName == "Bastidor")
+                {
+                    if (string.IsNullOrEmpty(Modelo))
+                        result = "Debe introducir el número de bastidor";
+                }
+                if (columnName == "Deposito")
+                {
+                    if (string.IsNullOrEmpty(Modelo))
+                        result = "Debe introducir la capacidad del depósito en litros";
+                }
+                if (columnName == "Km")
+                {
+                    if (string.IsNullOrEmpty(Modelo))
+                        result = "Debe introducir el número de Km del vehículo";
                 }
                 return result;
             }

@@ -6,6 +6,23 @@
         xmlns:local="clr-namespace:Tarea_2._1.Vista"
         mc:Ignorable="d"
         Title="CrearVehiculo" Height="450" Width="800">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <!-- Aplicamos estilo a todos los TextBox-->
+            <Style.Triggers>
+                <!-- Creamos el disparador-->
+                <Trigger Property="Validation.HasError" Value="True">
+                    <!-- el disparador es para cuando hay algun error-->
+                    <Setter Property="ToolBar.ToolTip"
+                            Value="{Binding RelativeSource={RelativeSource self}, 
+                                            Path=(Validation.Errors)[0].ErrorContent}"/>
+                    <!-- Recoge el valor de cualquier error en la ventana -->
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
     <Grid>
         <Label Content="Matricula" HorizontalAlignment="Left" Margin="40,27,0,0" VerticalAlignment="Top"/>
         <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Matricula, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

@@ -64,8 +64,7 @@ namespace Tarea_2._1.Vista
             this.logicaVehiculo = logica;
             this.logicaTipoVehiculo = new LogicaTipoVehiculo();
             this.modificar = true;
-
-            calendario.DisplayDate = DateTime.Now;
+            calendario.SelectedDate = vehiculo.CaducidadITV.Date;
             String[] plazas = {"A01", "A02", "A03", "A04", "A11", "A12", "A13", "A14", "A21", "A22", "A23", "A24",
                                 "B01", "B02", "B03", "B04", "B11", "B12", "B13", "B14", "B21", "B22", "B23", "B24"};
             //Contenido de ComboBoxes
@@ -87,7 +86,7 @@ namespace Tarea_2._1.Vista
         {
             if (modificar) 
             {
-                this.vehiculo.Alquilado = false;//Todos los vehículos creados no estarán alquilados
+                this.vehiculo.Alquilado = false;
                 this.vehiculo.CaducidadITV = (DateTimeOffset)calendario.SelectedDate;
                 logicaVehiculo.updateVehiculo(this.vehiculo, this.pos);
             }

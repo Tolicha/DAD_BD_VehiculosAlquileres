@@ -29,8 +29,12 @@ namespace Tarea_2._1
         {
             InitializeComponent();
             logicaVehiculo = new LogicaVehiculo();
+            p = new PaginaVehiculo(logicaVehiculo);
+            framePrincipal.NavigationService.Navigate(p);
         }
-        private void MenuItem_GotFocus(object sender, RoutedEventArgs e)
+
+        // Menu Vehiculo Eventos
+        private void listVehiculo_Click(object sender, RoutedEventArgs e)
         {
             p = new PaginaVehiculo(logicaVehiculo);
             framePrincipal.NavigationService.Navigate(p);
@@ -45,6 +49,11 @@ namespace Tarea_2._1
         {
             CrearVehiculo cv = new CrearVehiculo(logicaVehiculo, (Vehiculo)p.DatagridVehiculo.SelectedItem, p.DatagridVehiculo.SelectedIndex);
             cv.Show();
+        }
+
+        private void deleteVehiculo_Click(object sender, RoutedEventArgs e)
+        {
+            logicaVehiculo.deleteVehiculo((Vehiculo)p.DatagridVehiculo.SelectedItem);
         }
 
         private void insertCliente_Click(object sender, RoutedEventArgs e)
