@@ -5,7 +5,10 @@
     <Compile Update="MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PaginaCliente.xaml.cs">
+    <Compile Update="Paginas\PaginaAlquiler.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Paginas\PaginaCliente.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -13,7 +16,10 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PaginaCliente.xaml">
+    <Page Update="Paginas\PaginaAlquiler.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Paginas\PaginaCliente.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
