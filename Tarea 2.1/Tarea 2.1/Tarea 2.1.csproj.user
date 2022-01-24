@@ -5,7 +5,7 @@
     <Compile Update="MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Paginas\CrearCliente.xaml.cs">
+    <Compile Update="Vista\CrearCliente.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="WindowCliente.xaml.cs">
@@ -16,7 +16,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Paginas\CrearCliente.xaml">
+    <Page Update="Vista\CrearCliente.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowCliente.xaml">

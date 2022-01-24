@@ -28,23 +28,6 @@ namespace Tarea_2._1
             InitializeComponent();
             logicaCliente = new LogicaCliente();
         }
-        private void menuItem_gotFocus(object sender, RoutedEventArgs e)
-        {
-            if ((((MenuItem)sender).Name).Equals(vehiculo))
-            {
-                
-            }
-            else if ((((MenuItem)sender).Name).Equals(cliente))
-            {
-                p = new PaginaCliente(logicaCliente);
-                framePrincipal.NavigationService.Navigate(p);
-            }
-            else if ((((MenuItem)sender).Name).Equals(alquiler))
-            {
-                PaginaAlquiler p = new PaginaAlquiler();
-                framePrincipal.Navigate(p);
-            }
-        }
         private void menu_Click(object sender, RoutedEventArgs e)
         {
             if ((((MenuItem)sender).Name).Equals(vehiculo))
@@ -53,11 +36,13 @@ namespace Tarea_2._1
             }
             else if ((((MenuItem)sender).Name).Equals(cliente))
             {
-                                
+                p = new PaginaCliente(logicaCliente);
+                framePrincipal.NavigationService.Navigate(p);  
             }
             else if ((((MenuItem)sender).Name).Equals(alquiler))
             {
-
+                PaginaAlquiler p = new PaginaAlquiler();
+                framePrincipal.Navigate(p);
             }
         }
         private void menuItem_Click(object sender, RoutedEventArgs e)

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\App.xaml
-51944152412
+5-1161693564
 
-121379021700
+12-1347418351
 194-164764702
-MainWindow.xaml;Paginas\CrearCliente.xaml;Paginas\PaginaAlquiler.xaml;Paginas\PaginaCliente.xaml;WindowCliente.xaml;
+MainWindow.xaml;Vista\CrearCliente.xaml;Vista\PaginaAlquiler.xaml;Vista\PaginaCliente.xaml;WindowCliente.xaml;
 
 False
 
