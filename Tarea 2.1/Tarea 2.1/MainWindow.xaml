@@ -16,7 +16,7 @@
                 <MenuItem x:Name="deleteVehiculo" Header="Eliminar Vehiculo" Click="deleteVehiculo_Click"/>
             </MenuItem>
             <MenuItem Header="_Cliente" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694">
-                <MenuItem x:Name="listCliente" Header="Lista de Clientes"/>
+                <MenuItem x:Name="listCliente" Header="Lista de Clientes" Click="listCliente_Click"/>
                 <MenuItem x:Name="insertCliente" Header="Introducir Cliente" Click="insertCliente_Click"/>
                 <MenuItem x:Name="updateCliente" Header="Modificar Cliente"/>
                 <MenuItem x:Name="deleteCliente" Header="Eliminar Cliente"/>

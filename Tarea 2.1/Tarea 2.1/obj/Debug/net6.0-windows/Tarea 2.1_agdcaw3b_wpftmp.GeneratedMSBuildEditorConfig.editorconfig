@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net6.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Tarea_2._1
+build_property.ProjectDir = C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\

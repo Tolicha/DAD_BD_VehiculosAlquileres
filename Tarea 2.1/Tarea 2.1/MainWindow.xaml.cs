@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Tarea_2._1.Dto;
 using Tarea_2._1.Logica;
+using Tarea_2._1.Paginas;
 using Tarea_2._1.Vista;
 
 namespace Tarea_2._1
@@ -24,11 +25,14 @@ namespace Tarea_2._1
     public partial class MainWindow : Window
     {
         private LogicaVehiculo logicaVehiculo;
+        private LogicaCliente logicaCliente;
         private PaginaVehiculo p;
+        private PaginaCliente paginaCliente;
         public MainWindow()
         {
             InitializeComponent();
             logicaVehiculo = new LogicaVehiculo();
+            logicaCliente = new LogicaCliente(); 
             p = new PaginaVehiculo(logicaVehiculo);
             framePrincipal.NavigationService.Navigate(p);
         }
@@ -56,9 +60,18 @@ namespace Tarea_2._1
             logicaVehiculo.deleteVehiculo((Vehiculo)p.DatagridVehiculo.SelectedItem);
         }
 
+        // Metodos Cliente
+
+        private void listCliente_Click(object sender, RoutedEventArgs e)
+        {
+            paginaCliente = new PaginaCliente(logicaCliente);
+            framePrincipal.NavigationService.Navigate(paginaCliente);
+
+        }
         private void insertCliente_Click(object sender, RoutedEventArgs e)
         {
-
+            CrearCliente cc = new CrearCliente(logicaCliente);
+            cc.Show();
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)

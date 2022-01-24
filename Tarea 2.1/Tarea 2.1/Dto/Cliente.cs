@@ -11,6 +11,7 @@ namespace Tarea_2._1.Dto
     {
         private String nif;
         private Carnet carnet;
+        private string tipoCarnet;
         private String nombre;
         private String telefono;
         private String email;
@@ -28,7 +29,7 @@ namespace Tarea_2._1.Dto
             this.email = email;
             this.fechaNacimiento = fechaNacimiento;
         }
-        public string this[string columnName] => throw new NotImplementedException();
+        
         public String Nif
         {
             get
@@ -53,6 +54,20 @@ namespace Tarea_2._1.Dto
                 this.PropertyChanged(this, new PropertyChangedEventArgs("arrayCarnet"));
             }
         }
+
+        public string TipoCarnet
+        {
+            get
+            {
+                return carnet;
+            }
+            set
+            {
+                this.carnet = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("arrayCarnet"));
+            }
+        }
+
         public string Nombre
         {
             get
@@ -101,7 +116,23 @@ namespace Tarea_2._1.Dto
                 this.PropertyChanged(this, new PropertyChangedEventArgs("fechaNacimiento"));
             }
         }
-        public string Error => throw new NotImplementedException();
+        public string Error { get { return ""; } }
+        public string this[string columnName]
+        {
+            get
+            {
+                string result = "";
+                if (columnName == "Matricula")
+                {
+                    if (string.IsNullOrEmpty(Nombre))
+                        result = "Debe introducir el nombre del cliente";
+                }
+
+
+                return result;
+            }
+
+        }
 
         public event PropertyChangedEventHandler? PropertyChanged;
         public object Clone()
