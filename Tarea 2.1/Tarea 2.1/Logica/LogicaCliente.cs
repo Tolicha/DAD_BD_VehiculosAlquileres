@@ -18,7 +18,7 @@ namespace Tarea_2._1
             listaClientes.Add(new Cliente("42112233A", new Carnet(Carnet.Tipo.B, new DateTime(1995, 02, 02), new DateTime(2005, 02, 02)), "María Hernández", "6667777888", "maria@gmail.com", new DateTime(1995, 02, 02)));
         }
 
-        public void addCLiente(Cliente cliente)
+        public void addCliente(Cliente cliente)
         {
             listaClientes.Add(cliente);
         }

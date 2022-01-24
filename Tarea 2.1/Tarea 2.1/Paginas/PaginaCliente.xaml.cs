@@ -20,11 +20,14 @@ namespace Tarea_2._1
     /// </summary>
     public partial class PaginaCliente : Page
     {
-        public PaginaCliente()
+        private LogicaCliente logicaCliente;
+        public PaginaCliente(LogicaCliente logica)
         {
             InitializeComponent();
+            logicaCliente = logica;
+            DatagridCliente.DataContext = logicaCliente;
         }
 
-        
+
     }
 }

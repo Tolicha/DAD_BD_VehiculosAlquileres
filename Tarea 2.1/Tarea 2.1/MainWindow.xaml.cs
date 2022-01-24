@@ -31,8 +31,7 @@ namespace Tarea_2._1
             }
             else if ((((MenuItem)sender).Name).Equals(cliente))
             {
-                PaginaCliente cliente = new PaginaCliente();
-                
+                                
             }
             else if ((((MenuItem)sender).Name).Equals(alquiler))
             {
@@ -41,8 +40,6 @@ namespace Tarea_2._1
         }
         private void menuItem_Click(object sender, RoutedEventArgs e)
         {
-            Window ventanaCrear = new Window();
-            ventanaCrear.Show();
             if ((((MenuItem)sender).Name).Equals(insertVehiculo)) 
             {
                 
