@@ -16,7 +16,7 @@
                 <DataGridTextColumn Header="Telefono" Binding="{Binding Path = Telefono}" />
                 <DataGridTextColumn Header="Email" Binding="{Binding Path = Email}" />
                 <DataGridTextColumn Header="Fecha de Nacimiento" Binding="{Binding Path = FechaNacimiento, StringFormat={}{0:dd/MM/yyyy}}" />
-                <DataGridTextColumn Header="Tipo de Carnet" Binding="{Binding Path = Carnet}" />
+                <DataGridTextColumn Header="Tipo de Carnet" Binding="{Binding Path = TipoCarnet}" />
                 <DataGridTextColumn Header="Fecha de Expedición" Binding="{Binding Path = FechaExpedicion, StringFormat={}{0:dd/MM/yyyy}}" />
                 <DataGridTextColumn Header="Fecha de Caducidad" Binding="{Binding Path = FechaCaducidad, StringFormat={}{0:dd/MM/yyyy}}" />
             </DataGrid.Columns>

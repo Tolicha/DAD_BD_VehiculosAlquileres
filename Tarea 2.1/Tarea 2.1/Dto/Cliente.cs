@@ -57,13 +57,10 @@ namespace Tarea_2._1.Dto
 
         public string TipoCarnet
         {
-            get
-            {
-                return carnet;
-            }
+            get => Carnet.ToString();
             set
             {
-                this.carnet = value;
+                this.tipoCarnet = value;
                 this.PropertyChanged(this, new PropertyChangedEventArgs("arrayCarnet"));
             }
         }
