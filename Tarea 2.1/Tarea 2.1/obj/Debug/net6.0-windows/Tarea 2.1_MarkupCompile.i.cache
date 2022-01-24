@@ -1,5 +1,5 @@
 ﻿Tarea 2.1
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\App.xaml
 3-427255908
 
-1083507965
+12-570132694
 194-164764702
 MainWindow.xaml;Paginas\PaginaAlquiler.xaml;Paginas\PaginaCliente.xaml;
 
-False
+True
 

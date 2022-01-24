@@ -26,9 +26,31 @@ namespace Tarea_2._1
             //framePrincipal.navigate(cliente);
         }
 
-        private void Frame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        private void menuItem_Click(object sender, RoutedEventArgs e)
         {
+            Window ventanaCrear = new Window();
+            ventanaCrear.Show();
+            if ((((MenuItem)sender).Name).Equals(insertVehiculo)) 
+            {
 
+            } else if ((((MenuItem)sender).Name).Equals(updateVehiculo))
+            {
+
+            } else if ((((MenuItem)sender).Name).Equals(insertCliente))
+            {
+
+            } else if ((((MenuItem)sender).Name).Equals(updateCliente))
+            {
+
+            } else if ((((MenuItem)sender).Name).Equals(insertAlquiler))
+            {
+
+            } else if ((((MenuItem)sender).Name).Equals(updateAlquiler))
+            {
+
+            }
+            
+            
         }
     }
 }

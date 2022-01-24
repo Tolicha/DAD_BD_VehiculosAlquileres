@@ -19,5 +19,7 @@ C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-wi
 C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Tarea 2.1.genruntimeconfig.cache
 C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\PaginaCliente.g.cs
-C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\PaginaCliente.baml
+C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Paginas\PaginaAlquiler.g.cs
+C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Paginas\PaginaCliente.g.cs
+C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Paginas\PaginaAlquiler.baml
+C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Paginas\PaginaCliente.baml

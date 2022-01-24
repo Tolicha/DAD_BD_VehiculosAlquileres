@@ -9,9 +9,7 @@
       Title="PaginaCliente">
     <Grid>
         <DataGrid x:Name="DatagridCliente" AutoGenerateColumns="True" ItemsSource="{Binding Path=listaClientes}" Margin="14,69,14,70" RenderTransformOrigin="0.572,0.512">
-            <DataGrid.Colums>
-                <DataGridTextColumn />
-            </DataGrid.Colums>
+            
         </DataGrid>
     </Grid>
 </Page>
