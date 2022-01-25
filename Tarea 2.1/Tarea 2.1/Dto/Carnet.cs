@@ -7,24 +7,23 @@ using System.Threading.Tasks;
 
 namespace Tarea_2._1.Dto
 {
-    public class Carnet : INotifyPropertyChanged, ICloneable, IDataErrorInfo
+    public class Carnet : INotifyPropertyChanged, ICloneable
     {
-        public enum Tipo { AM, A1, A2, A, B, C1, C, D1, D };
-        private Tipo tipoCarnet;
+        public String tipoCarnet;
         private DateTimeOffset fechaExpedicion;
         private DateTimeOffset fechaCaducidad;
         public Carnet()
         {
 
         }
-        public Carnet(Tipo tipoCarnet, DateTimeOffset fechaExpedicion, DateTimeOffset fechaCaducidad)
+        public Carnet(String tipoCarnet, DateTimeOffset fechaExpedicion, DateTimeOffset fechaCaducidad)
         {
             this.tipoCarnet = tipoCarnet;
             this.fechaExpedicion = fechaExpedicion;
             this.fechaCaducidad = fechaCaducidad;
         }
         
-        public Tipo TipoCarnet
+        public string TipoCarnet
         {
             get
             {
@@ -61,14 +60,18 @@ namespace Tarea_2._1.Dto
                 this.PropertyChanged(this, new PropertyChangedEventArgs("fechaCaducidad"));
             }
         }
-        public string Error => throw new NotImplementedException();
-        public string this[string columnName] => throw new NotImplementedException();
+        
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
         public object Clone()
         {
             throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            return tipoCarnet;
         }
     }
 }

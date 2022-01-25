@@ -74,21 +74,15 @@ namespace Tarea_2._1
             cc.Show();
         }
 
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        private void updateCliente_Click(object sender, RoutedEventArgs e)
         {
-            
+            CrearCliente cc = new CrearCliente(logicaCliente, (Cliente)paginaCliente.DatagridCliente.SelectedItem, paginaCliente.DatagridCliente.SelectedIndex);
+            cc.Show();
         }
 
-        private void MenuItem_GotFocus_1(object sender, RoutedEventArgs e)
+        private void deleteCliente_Click(object sender, RoutedEventArgs e)
         {
-            PaginaAlquiler p = new PaginaAlquiler();
-            framePrincipal.Navigate(p);
+            logicaCliente.deleteCliente((Cliente)paginaCliente.DatagridCliente.SelectedItem);
         }
-        private void insertAlquiler_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        
     }
 }
