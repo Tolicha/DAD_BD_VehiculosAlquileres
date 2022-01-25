@@ -150,5 +150,10 @@ namespace Tarea_2._1.Dto
         {
             throw new NotImplementedException();
         }
+
+        public override string ToString()
+        {
+            return this.nif;
+        }
     }
 }

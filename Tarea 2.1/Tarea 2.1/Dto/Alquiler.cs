@@ -23,19 +23,21 @@ namespace Tarea_2._1.Dto
         {
 
         }
-        public Alquiler(DateTimeOffset fechaInicio, DateTimeOffset fechaFin, double precioTotal, double fianza, double kmInicio, double kmFin, String estadoVehiculo, String tipoSeguro, Cliente cliente, Vehiculo vehiculo)
+
+        public Alquiler(DateTimeOffset fechaInicio, DateTimeOffset fechaFin, double precioTotal, double fianza, double kmInicio, double kmFin, string estadoVehiculo, string tipoSeguro, Cliente cliente, Vehiculo vehiculo)
         {
-            this.FechaInicio = fechaInicio;
-            this.FechaFin = fechaFin;
+            this.fechaInicio = fechaInicio;
+            this.fechaFin = fechaFin;
             this.precioTotal = precioTotal;
-            this.Fianza = fianza;
-            this.KmInicio = kmInicio;
-            this.KmFin = kmFin;
-            this.EstadoVehiculo = estadoVehiculo;
-            this.TipoSeguro = tipoSeguro;
+            this.fianza = fianza;
+            this.kmInicio = kmInicio;
+            this.kmFin = kmFin;
+            this.estadoVehiculo = estadoVehiculo;
+            this.tipoSeguro = tipoSeguro;
             this.cliente = cliente;
             this.vehiculo = vehiculo;
         }
+
         public DateTimeOffset FechaInicio 
         {
             get
@@ -185,12 +187,12 @@ namespace Tarea_2._1.Dto
                 }
                 if (columnName == "Km Inicio")
                 {
-                    if (!(KmInicio > 0 || KmInicio < 100000))
+                    if (!(KmInicio > 0 || KmInicio < 200000))
                         result = "Debe introducir los Km del coche al iniciar el alquiler";
                 }
                 if (columnName == "Km Fin")
                 {
-                    if (!(KmFin > 0 || KmFin <= 100000))
+                    if (!(KmFin > 0 || KmFin <= 200000))
                         result = "Debe introducir los Km del coche al finalizar el alquiler";
                 }
                 if (columnName == "Estado del Vehículo")

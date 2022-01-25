@@ -26,22 +26,25 @@ namespace Tarea_2._1
     {
         private LogicaVehiculo logicaVehiculo;
         private LogicaCliente logicaCliente;
-        private PaginaVehiculo p;
+        private LogicaAlquiler logicaAlquiler;
+        private PaginaVehiculo paginaVehiculo;
         private PaginaCliente paginaCliente;
+        private PaginaAlquiler paginaAlquiler;
         public MainWindow()
         {
             InitializeComponent();
             logicaVehiculo = new LogicaVehiculo();
-            logicaCliente = new LogicaCliente(); 
-            p = new PaginaVehiculo(logicaVehiculo);
-            framePrincipal.NavigationService.Navigate(p);
+            logicaCliente = new LogicaCliente();
+            logicaAlquiler = new LogicaAlquiler();
+            paginaVehiculo = new PaginaVehiculo(logicaVehiculo);
+            framePrincipal.NavigationService.Navigate(paginaVehiculo);
         }
 
         // Menu Vehiculo Eventos
         private void listVehiculo_Click(object sender, RoutedEventArgs e)
         {
-            p = new PaginaVehiculo(logicaVehiculo);
-            framePrincipal.NavigationService.Navigate(p);
+            paginaVehiculo = new PaginaVehiculo(logicaVehiculo);
+            framePrincipal.NavigationService.Navigate(paginaVehiculo);
         }
         private void insertVehiculo_Click(object sender, RoutedEventArgs e)
         {
@@ -51,13 +54,13 @@ namespace Tarea_2._1
 
         private void updateVehiculo_Click(object sender, RoutedEventArgs e)
         {
-            CrearVehiculo cv = new CrearVehiculo(logicaVehiculo, (Vehiculo)p.DatagridVehiculo.SelectedItem, p.DatagridVehiculo.SelectedIndex);
+            CrearVehiculo cv = new CrearVehiculo(logicaVehiculo, (Vehiculo)paginaVehiculo.DatagridVehiculo.SelectedItem, paginaVehiculo.DatagridVehiculo.SelectedIndex);
             cv.Show();
         }
 
         private void deleteVehiculo_Click(object sender, RoutedEventArgs e)
         {
-            logicaVehiculo.deleteVehiculo((Vehiculo)p.DatagridVehiculo.SelectedItem);
+            logicaVehiculo.deleteVehiculo((Vehiculo)paginaVehiculo.DatagridVehiculo.SelectedItem);
         }
 
         // Metodos Cliente
@@ -74,21 +77,39 @@ namespace Tarea_2._1
             cc.Show();
         }
 
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        private void updateCliente_Click(object sender, RoutedEventArgs e)
         {
-            
+            CrearCliente cc = new CrearCliente(logicaCliente, (Cliente)paginaCliente.DatagridCliente.SelectedItem, paginaCliente.DatagridCliente.SelectedIndex);
+            cc.Show();
         }
 
-        private void MenuItem_GotFocus_1(object sender, RoutedEventArgs e)
+        private void deleteCliente_Click(object sender, RoutedEventArgs e)
         {
-            PaginaAlquiler p = new PaginaAlquiler();
-            framePrincipal.Navigate(p);
+            logicaCliente.deleteCliente((Cliente)paginaCliente.DatagridCliente.SelectedItem);
         }
+
+        //ALQUILERES
+        private void listAlquiler_Click(object sender, RoutedEventArgs e)
+        {
+            paginaAlquiler = new PaginaAlquiler(logicaAlquiler);
+            framePrincipal.NavigationService.Navigate(paginaAlquiler);
+        }
+
         private void insertAlquiler_Click(object sender, RoutedEventArgs e)
-        {
-
+        {   
+            CrearAlquiler ca = new CrearAlquiler(logicaAlquiler, logicaVehiculo, logicaCliente);
+            ca.Show();
         }
 
-        
+        private void updateAlquiler_Click(object sender, RoutedEventArgs e)
+        {
+            CrearAlquiler ca = new CrearAlquiler(logicaAlquiler, logicaVehiculo, logicaCliente, (Alquiler)paginaAlquiler.DatagridAlquiler.SelectedItem, paginaAlquiler.DatagridAlquiler.SelectedIndex);
+            ca.Show();
+        }
+
+        private void deleteAlquiler_Click(object sender, RoutedEventArgs e)
+        {
+            logicaAlquiler.deleteAlquiler((Alquiler)paginaAlquiler.DatagridAlquiler.SelectedItem);
+        }
     }
 }

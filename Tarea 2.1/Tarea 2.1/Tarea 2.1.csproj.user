@@ -19,12 +19,6 @@
     <Compile Update="Vista\PaginaVehiculo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WindowAlquiler.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="WindowVehiculo.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -40,12 +34,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\PaginaVehiculo.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="WindowAlquiler.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="WindowVehiculo.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

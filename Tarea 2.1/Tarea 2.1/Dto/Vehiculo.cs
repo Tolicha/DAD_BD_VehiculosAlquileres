@@ -208,22 +208,22 @@ namespace Tarea_2._1.Dto
                 }
                 if (columnName == "Precio")
                 {
-                    if (string.IsNullOrEmpty(Matricula))
+                    if (!(Precio > 0 || Precio < 500))
                         result = "Debe introducir el PVP del alquiler";
                 }
                 if (columnName == "Bastidor")
                 {
-                    if (string.IsNullOrEmpty(Modelo))
+                    if (string.IsNullOrEmpty(Bastidor))
                         result = "Debe introducir el número de bastidor";
                 }
                 if (columnName == "Deposito")
                 {
-                    if (string.IsNullOrEmpty(Modelo))
+                    if (!(Deposito > 0 || Deposito < 200) )
                         result = "Debe introducir la capacidad del depósito en litros";
                 }
                 if (columnName == "Km")
                 {
-                    if (string.IsNullOrEmpty(Modelo))
+                    if (!(Km > 0 || Km < 200000))
                         result = "Debe introducir el número de Km del vehículo";
                 }
                 return result;
@@ -236,6 +236,11 @@ namespace Tarea_2._1.Dto
         public object Clone()
         {
             return this.MemberwiseClone();
+        }
+
+        public override string ToString()
+        {
+            return this.matricula;
         }
     }
 }

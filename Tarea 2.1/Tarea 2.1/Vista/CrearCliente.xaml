@@ -6,6 +6,18 @@
         xmlns:local="clr-namespace:Tarea_2._1.Paginas"
         mc:Ignorable="d"
         Title="CrearCliente" Height="400" Width="520">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="ToolBar.ToolTip"
+                            Value="{Binding RelativeSource={RelativeSource self}, 
+                                            Path=(Validation.Errors)[0].ErrorContent}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top"/>
         <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Nombre, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="50,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
@@ -23,13 +35,13 @@
         <DatePicker x:Name="calendarioNacimiento"  Validation.Error="Validation_Error" SelectedDate="{Binding Path = FechaNacimiento, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="300,60,0,0" VerticalAlignment="Top" Width="150" />
 
         <Label Content="Tipo de Carnet" HorizontalAlignment="Left" Margin="300,100,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboTipoCarnet" Validation.Error="Validation_Error" Text="{Binding Path = Carnet, NotifyOnValidationError=True, ValidatesOnDataErrors=True}"  HorizontalAlignment="Left" Margin="300,130,0,0" VerticalAlignment="Top" Width="150"/>
+        <ComboBox x:Name="comboTipoCarnet" Validation.Error="Validation_Error" Text="{Binding Path = Carnet.TipoCarnet, NotifyOnValidationError=True, ValidatesOnDataErrors=True}"  HorizontalAlignment="Left" Margin="300,130,0,0" VerticalAlignment="Top" Width="150"/>
 
         <Label Content="Fecha de expedición" HorizontalAlignment="Left" Margin="300,170,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="calendarioExpedicion"  Validation.Error="Validation_Error" SelectedDate="{Binding Path = FechaExpedicion, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="300,200,0,0" VerticalAlignment="Top" Width="150" />
+        <DatePicker x:Name="calendarioExpedicion"  Validation.Error="Validation_Error" SelectedDate="{Binding Path = Carnet.FechaExpedicion, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="300,200,0,0" VerticalAlignment="Top" Width="150" />
 
         <Label Content="Fecha de caducidad" HorizontalAlignment="Left" Margin="300,240,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="calendarioCaducidad"  Validation.Error="Validation_Error" SelectedDate="{Binding Path = FechaCaducidad, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="300,270,0,0" VerticalAlignment="Top" Width="150" />
+        <DatePicker x:Name="calendarioCaducidad"  Validation.Error="Validation_Error" SelectedDate="{Binding Path = Carnet.FechaCaducidad, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="300,270,0,0" VerticalAlignment="Top" Width="150" />
 
         <Button x:Name="anadirBoton" Content="Crear" HorizontalAlignment="Left" Margin="370,330,0,0" VerticalAlignment="Top" Click="anadirBoton_Click" Width="75" />
 

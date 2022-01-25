@@ -6,7 +6,53 @@
         xmlns:local="clr-namespace:Tarea_2._1.Vista"
         mc:Ignorable="d"
         Title="CrearAlquiler" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="ToolBar.ToolTip"
+                            Value="{Binding RelativeSource={RelativeSource self}, 
+                                            Path=(Validation.Errors)[0].ErrorContent}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
-        
+        <Label Content="Vehiculo" HorizontalAlignment="Left" Margin="40,27,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboVehiculos" Validation.Error="Validation_Error" Text="{Binding Path = Alquiler.Vehiculo, NotifyOnValidationError=True, ValidatesOnDataErrors=True}"  HorizontalAlignment="Left" Margin="42,58,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Cliente" HorizontalAlignment="Left" Margin="212,27,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboClientes" Validation.Error="Validation_Error" Text="{Binding Path = Alquiler.Cliente, NotifyOnValidationError=True, ValidatesOnDataErrors=True}"  HorizontalAlignment="Left" Margin="212,58,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Precio Total" HorizontalAlignment="Left" Margin="40,90,0,0" VerticalAlignment="Top"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = PrecioTotal, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Fianza" HorizontalAlignment="Left" Margin="212,90,0,0" VerticalAlignment="Top"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Fianza, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <StackPanel>
+            <Label Content="Tipo de Seguro" HorizontalAlignment="Left" Margin="41,139,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="todoRiesgo" Content="Todo riesgo" IsChecked="True"/>
+            <RadioButton x:Name="terceros" Content="Terceros"/>
+        </StackPanel>
+
+        <Label Content="Estado del coche" HorizontalAlignment="Left" Margin="212,139,0,0" VerticalAlignment="Top"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = EstadoVehiculo, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
+
+        <Label Content="Km Inicio" HorizontalAlignment="Left" Margin="40,191,0,0" VerticalAlignment="Top"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = KmInicio, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="40,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Km Fin" HorizontalAlignment="Left" Margin="210,191,0,0" VerticalAlignment="Top"/>
+        <TextBox Validation.Error="Validation_Error" Text="{Binding Path = KmFin, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Fecha Fin" HorizontalAlignment="Left" Margin="210,240,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="calendarioFin"  Validation.Error="Validation_Error" SelectedDate="{Binding Path = FechaFin, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="212,270,0,0" VerticalAlignment="Top" />
+
+        <Label Content="Fecha Inicio" HorizontalAlignment="Left" Margin="40,240,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="calendarioInicio"  Validation.Error="Validation_Error" SelectedDate="{Binding Path = FechaInicio, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="41,270,0,0" VerticalAlignment="Top" />
+
+        <Button x:Name="anadirBoton" Content="Crear" HorizontalAlignment="Left" Margin="138,334,0,0" VerticalAlignment="Top" Click="anadirBoton_Click"/>
+
     </Grid>
 </Window>

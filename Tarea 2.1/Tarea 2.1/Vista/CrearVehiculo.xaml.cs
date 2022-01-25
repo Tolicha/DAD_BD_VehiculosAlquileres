@@ -92,21 +92,17 @@ namespace Tarea_2._1.Vista
                     this.vehiculo.TipoVehiculo = tv;
                 }
             }
+            //PARA ESTABLECER ALQUILADO Y FECHA ITV
+            this.vehiculo.Alquilado = false;
+            this.vehiculo.CaducidadITV = (DateTimeOffset)calendario.SelectedDate;
 
             if (modificar) 
             {
-                this.vehiculo.Alquilado = false;
-                this.vehiculo.CaducidadITV = (DateTimeOffset)calendario.SelectedDate;
-                //tipoVehiculo = (TipoVehiculo)comboTipoVehiculo.SelectedItem;
-                //this.vehiculo.TipoVehiculo = tipoVehiculo;
+                
                 logicaVehiculo.updateVehiculo(this.vehiculo, this.pos);
             }
             else
             {
-                this.vehiculo.Alquilado = false;//Todos los vehículos creados no estarán alquilados
-                this.vehiculo.CaducidadITV = (DateTimeOffset)calendario.SelectedDate;
-                //tipoVehiculo = (TipoVehiculo) comboTipoVehiculo.SelectedItem;
-                //this.vehiculo.TipoVehiculo = tipoVehiculo;
                 logicaVehiculo.addVehiculo(this.vehiculo);
             }
 

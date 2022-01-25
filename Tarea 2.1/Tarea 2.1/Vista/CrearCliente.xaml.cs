@@ -27,10 +27,12 @@ namespace Tarea_2._1.Paginas
         private int errores;
         private Boolean modificar;
         private int pos;
+        private String[] tiposCarnet = { "AM", "A1", "A2", "A", "B", "C1", "C", "D1", "D" };
         public CrearCliente(LogicaCliente logica)
         {
             InitializeComponent();
             this.cliente = new Cliente();
+            this.carnet = new Carnet();
             this.DataContext = cliente;
             this.logicaCliente = logica;
             this.modificar = false;
@@ -38,8 +40,6 @@ namespace Tarea_2._1.Paginas
             calendarioNacimiento.DisplayDate = DateTime.Now;
             calendarioExpedicion.DisplayDate = DateTime.Now;
             calendarioCaducidad.DisplayDate = DateTime.Now;
-
-            String[] tiposCarnet = { "AM", "A1", "A2", "A", "B", "C1", "C", "D1", "D" };
 
             // Contenido de ComboBox
             foreach (String tipoCarnet in tiposCarnet)
@@ -54,6 +54,7 @@ namespace Tarea_2._1.Paginas
         {
             InitializeComponent();
             this.cliente = clienteModificar;
+            this.carnet = new Carnet();
             this.pos = pos;
             this.DataContext = cliente;
             this.logicaCliente = logica;
@@ -63,8 +64,6 @@ namespace Tarea_2._1.Paginas
             calendarioExpedicion.DisplayDate = DateTime.Now;
             calendarioCaducidad.DisplayDate = DateTime.Now;
 
-            String[] tiposCarnet = { "AM", "A1", "A2", "A", "B", "C1", "C", "D1", "D" };
-            
             // Contenido de ComboBox
             foreach (String tipoCarnet in tiposCarnet)
             {
@@ -75,13 +74,28 @@ namespace Tarea_2._1.Paginas
         }
         private void anadirBoton_Click(object sender, RoutedEventArgs e)
         {
+            String tipoDeCarnet = "";
+
+            //PARA ESTABLECES TIPO DE CARNET
+            foreach (String tipoCarnet in tiposCarnet)
+            {
+                if (comboTipoCarnet.SelectedItem.ToString().Contains(tipoCarnet))
+                {
+                    tipoDeCarnet = tipoCarnet;
+                    break;
+                }
+            }
+            //PARA ESTABLECER LAS FECHAS
+            this.cliente.FechaNacimiento = (DateTimeOffset) calendarioNacimiento.SelectedDate;
+            carnet = new Carnet(tipoDeCarnet, (DateTimeOffset)calendarioExpedicion.SelectedDate, (DateTimeOffset)calendarioCaducidad.SelectedDate);
+            cliente.Carnet = this.carnet;
+
             if (modificar)
             {
                 logicaCliente.updateCliente(this.cliente, this.pos);
             }
             else
             {
-                carnet = new Carnet(Carnet.Tipo.A1,(DateTimeOffset)calendarioExpedicion.SelectedDate, (DateTimeOffset)calendarioCaducidad.SelectedDate);
                 logicaCliente.addCliente(this.cliente);
             }
 
