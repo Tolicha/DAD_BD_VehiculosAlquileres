@@ -16,7 +16,6 @@ namespace Tarea_2._1.Logica
         public LogicaAlquiler()
         {
             listaAlquileres = new ObservableCollection<Alquiler>();
-            listaAlquileres = new ObservableCollection<Alquiler>();
             listaAlquileres.Add(new Alquiler(new DateTime(2020 - 10 - 01), new DateTime(2020 - 10 - 10), 100, 50, 20000, 25000, "Alquilado", "Terceros", new LogicaCliente().listaClientes[1], new LogicaVehiculo().listaVehiculos[1]));
             listaAlquileres.Add(new Alquiler(new DateTime(2021 - 08 - 11), new DateTime(2021 - 08 - 21), 150, 60, 15000, 30000, "Alquilado", "Terceros ampliado", new LogicaCliente().listaClientes[2], new LogicaVehiculo().listaVehiculos[2]));
             listaAlquileres.Add(new Alquiler(new DateTime(2021 - 02 - 04), new DateTime(2021 - 02 - 04), 1000, 100, 50000, 70000, "Alquilado", "Todo riesgo", new LogicaCliente().listaClientes[3], new LogicaVehiculo().listaVehiculos[3]));
