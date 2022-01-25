@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tarea_2._1.Logica;
 
 namespace Tarea_2._1.Vista
 {
@@ -20,9 +21,12 @@ namespace Tarea_2._1.Vista
     /// </summary>
     public partial class PaginaAlquiler : Page
     {
-        public PaginaAlquiler()
+        private LogicaAlquiler logicaAlquiler;
+        public PaginaAlquiler(LogicaAlquiler logica)
         {
             InitializeComponent();
+            logicaAlquiler = logica;
+            DatagridAlquiler.DataContext = logicaAlquiler;
         }
     }
 }

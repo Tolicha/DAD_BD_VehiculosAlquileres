@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Vista\CrearAlquiler.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Vista\CrearVehiculo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,12 +19,12 @@
     <Compile Update="Vista\PaginaVehiculo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WindowVehiculo.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vista\CrearAlquiler.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\CrearVehiculo.xaml">
@@ -31,9 +34,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\PaginaVehiculo.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="WindowVehiculo.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

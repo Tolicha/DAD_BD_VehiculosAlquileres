@@ -237,5 +237,10 @@ namespace Tarea_2._1.Dto
         {
             return this.MemberwiseClone();
         }
+
+        public override string ToString()
+        {
+            return this.matricula;
+        }
     }
 }

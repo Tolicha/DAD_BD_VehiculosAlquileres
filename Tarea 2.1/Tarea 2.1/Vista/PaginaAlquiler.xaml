@@ -9,21 +9,22 @@
       Title="PaginaAlquiler">
 
     <Grid>
-        <DataGrid x:Name="DatagridVehiculo" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaVehiculos}" RenderTransformOrigin="0.572,0.512">
+
+        <DataGrid x:Name="DatagridAlquiler" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaAlquileres}" RenderTransformOrigin="0.572,0.512">
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Marca" Binding="{Binding Path = Marca}" />
-                <DataGridTextColumn Header="Modelo" Binding="{Binding Path = Modelo}" />
-                <DataGridTextColumn Header="Matricula" Binding="{Binding Path = Matricula}" />
-                <DataGridTextColumn Header="Plaza" Binding="{Binding Path = Plaza}" />
-                <DataGridTextColumn Header="Precio (€)" Binding="{Binding Path = Precio}" />
-                <DataGridTextColumn Header="Alquilado" Binding="{Binding Path = Alquilado}"/>
-                <DataGridTextColumn Header="Cod. Bastidor" Binding="{Binding Path = Bastidor}" />
-                <DataGridTextColumn Header="Depósito (L)" Binding="{Binding Path = Deposito}" />
-                <DataGridTextColumn Header="Kms" Binding="{Binding Path = Km}" />
-                <DataGridTextColumn Header="Fecha Fin ITV" Binding="{Binding Path = CaducidadITV, StringFormat={}{0:dd/MM/yyyy}}" />
-                <DataGridTextColumn Header="Tipo" Binding="{Binding Path = TipoVehiculo}" />
+                <DataGridTextColumn Header="Fecha Inicio" Binding="{Binding Path = FechaInicio, StringFormat={}{0:dd/MM/yyyy}}" />
+                <DataGridTextColumn Header="Fecha Fin" Binding="{Binding Path = FechaFin, StringFormat={}{0:dd/MM/yyyy}}" />
+                <DataGridTextColumn Header="Precio Total (€)" Binding="{Binding Path = PrecioTotal}" />
+                <DataGridTextColumn Header="Fianza" Binding="{Binding Path = Fianza}" />
+                <DataGridTextColumn Header="Km Inicio " Binding="{Binding Path = KmInicio}" />
+                <DataGridTextColumn Header="Km Fin" Binding="{Binding Path = KmFin}"/>
+                <DataGridTextColumn Header="Estado del Vehículo" Binding="{Binding Path = EstadoVehiculo}" />
+                <DataGridTextColumn Header="Cliente" Binding="{Binding Path = Cliente.Nif}" />
+                <DataGridTextColumn Header="Vehículo" Binding="{Binding Path = Vehiculo.Matricula}" />
             </DataGrid.Columns>
+            
         </DataGrid>
+        
     </Grid>
 </Page>

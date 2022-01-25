@@ -6,6 +6,18 @@
         xmlns:local="clr-namespace:Tarea_2._1.Paginas"
         mc:Ignorable="d"
         Title="CrearCliente" Height="400" Width="520">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="ToolBar.ToolTip"
+                            Value="{Binding RelativeSource={RelativeSource self}, 
+                                            Path=(Validation.Errors)[0].ErrorContent}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top"/>
         <TextBox Validation.Error="Validation_Error" Text="{Binding Path = Nombre, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Margin="50,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>

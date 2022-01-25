@@ -9,21 +9,22 @@ namespace Tarea_2._1.Dto
 {
     public class Alquiler : INotifyPropertyChanged, ICloneable, IDataErrorInfo
     {
-        private DateTime fechaInicio;
-        private DateTime fechaFin;
+        private DateTimeOffset fechaInicio;
+        private DateTimeOffset fechaFin;
         private double precioTotal;
         private double fianza;
         private double kmInicio;
         private double kmFin;
-        public enum EstadoVehiculo { Alquilado, Libre };
-        private EstadoVehiculo estadoVehiculo;
-        public enum TipoSeguro { Terceros, TercerosAmpliado, TodoRiesgo };
-        private TipoSeguro tipoSeguro;
+        private String estadoVehiculo;
+        private String tipoSeguro;
+        private Cliente cliente;
+        private Vehiculo vehiculo;
         public Alquiler()
         {
 
         }
-        public Alquiler(DateTime fechaInicio, DateTime fechaFin, double precioTotal, double fianza, double kmInicio, double kmFin, EstadoVehiculo estadoVehiculo, TipoSeguro tipoSeguro)
+
+        public Alquiler(DateTimeOffset fechaInicio, DateTimeOffset fechaFin, double precioTotal, double fianza, double kmInicio, double kmFin, string estadoVehiculo, string tipoSeguro, Cliente cliente, Vehiculo vehiculo)
         {
             this.fechaInicio = fechaInicio;
             this.fechaFin = fechaFin;
@@ -33,15 +34,185 @@ namespace Tarea_2._1.Dto
             this.kmFin = kmFin;
             this.estadoVehiculo = estadoVehiculo;
             this.tipoSeguro = tipoSeguro;
+            this.cliente = cliente;
+            this.vehiculo = vehiculo;
         }
-        
-        public string this[string columnName] => throw new NotImplementedException();
-        public string Error => throw new NotImplementedException();
+
+        public DateTimeOffset FechaInicio 
+        {
+            get
+            {
+                return fechaInicio;
+            }
+            set 
+            {
+                this.fechaInicio = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("fechaInicio"));
+            }
+            
+        }
+        public DateTimeOffset FechaFin 
+        {
+            get
+            {
+                return fechaFin;
+            }
+            set
+            {
+                this.fechaFin = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("fechaFin"));
+            }
+        }
+        public double PrecioTotal 
+        {
+            get
+            {
+                return precioTotal;
+            }
+            set
+            {
+                this.precioTotal = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("precioTotal"));
+            }
+        }
+        public double Fianza 
+        {
+            get
+            {
+                return fianza;
+            }
+            set
+            {
+                this.fianza = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("fianza"));
+            }
+        }
+        public double KmInicio 
+        {
+            get
+            {
+                return kmInicio;
+            }
+            set
+            {
+                this.kmInicio = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("kmInicio"));
+            }
+        }
+        public double KmFin 
+        {
+            get
+            {
+                return kmFin;
+            }
+            set
+            {
+                this.kmFin = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("kmFin"));
+            }
+        }
+        public string EstadoVehiculo
+        {
+            get
+            {
+                return estadoVehiculo;
+            }
+            set
+            {
+                this.estadoVehiculo = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("estadoVehiculo"));
+            }
+        }
+        public string TipoSeguro 
+        {
+            get
+            {
+                return tipoSeguro;
+            }
+            set
+            {
+                this.tipoSeguro = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("tipoSeguro"));
+            }
+        }
+        public Cliente Cliente 
+        {
+            get
+            {
+                return cliente;
+            }
+            set
+            {
+                this.cliente = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("cliente"));
+            }
+        }
+        public Vehiculo Vehiculo 
+        {
+            get
+            {
+                return vehiculo;
+            }
+            set
+            {
+                this.vehiculo = value;
+                this.PropertyChanged(this, new PropertyChangedEventArgs("vehiculo"));
+            }
+        }
+        public string Error { get { return ""; } }
+        public string this[string columnName]
+        {
+            get
+            {
+                string result = "";
+                if (columnName == "Fecha Inicio")
+                {
+                //    if (string.IsNullOrEmpty())
+                //        result = "Debe introducir la fecha de inicio del alquiler";
+                }
+                if (columnName == "Fecha Fin")
+                {
+                //    if (string.IsNullOrEmpty())
+                //        result = "Debe introducir la fecha de fin del alquiler";
+                }
+                if (columnName == "Precio Total")
+                {
+                    if (!(precioTotal > 0 || precioTotal < 5000))
+                        result = "Debe introducir el precio total del alquiler";
+                }
+                if (columnName == "Fianza")
+                {
+                    if (!(Fianza > 0 || Fianza <= 1000))
+                        result = "Debe introducir la fianza del alquiler";
+                }
+                if (columnName == "Km Inicio")
+                {
+                    if (!(KmInicio > 0 || KmInicio < 200000))
+                        result = "Debe introducir los Km del coche al iniciar el alquiler";
+                }
+                if (columnName == "Km Fin")
+                {
+                    if (!(KmFin > 0 || KmFin <= 200000))
+                        result = "Debe introducir los Km del coche al finalizar el alquiler";
+                }
+                if (columnName == "Estado del Vehículo")
+                {
+                    if (string.IsNullOrEmpty(EstadoVehiculo))
+                        result = "Debe introducir el estado del vehículo";
+                }
+                if (columnName == "Tipo de Seguro")
+                {
+                    if (string.IsNullOrEmpty(TipoSeguro))
+                        result = "Debe introducir el tipo de seguro contratado";
+                }
+                return result;
+            }
+        }
 
         public event PropertyChangedEventHandler? PropertyChanged;
         public object Clone()
         {
-            throw new NotImplementedException();
+            return this.MemberwiseClone();
         }
     }
 }
