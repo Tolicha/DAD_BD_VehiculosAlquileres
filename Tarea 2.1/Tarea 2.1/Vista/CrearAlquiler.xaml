@@ -33,8 +33,8 @@
 
         <StackPanel>
             <Label Content="Tipo de Seguro" HorizontalAlignment="Left" Margin="41,139,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="todoRiesgo" Content="Todo riesgo" IsChecked="True"/>
-            <RadioButton x:Name="terceros" Content="Terceros"/>
+            <RadioButton x:Name="todoRiesgo" Content="Todo riesgo" IsChecked="True" Height="18" Width="718"/>
+            <RadioButton x:Name="terceros" Content="Terceros" Height="18" Width="718"/>
         </StackPanel>
 
         <Label Content="Estado del coche" HorizontalAlignment="Left" Margin="212,139,0,0" VerticalAlignment="Top"/>
