@@ -1,0 +1,27 @@
+﻿<Window x:Class="Tarea_2._1.WindowAlquiler"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea_2._1"
+        mc:Ignorable="d"
+        Title="WindowAlquiler" Height="450" Width="800">
+    <Grid>
+        
+        <DataGrid x:Name="DatagridVehiculo" AutoGenerateColumns="True" ItemsSource="{Binding Path=listaAlquileres}" Margin="14,69,14,68" RenderTransformOrigin="0.572,0.512"/>
+        <Menu Margin="0,10,0,0" HorizontalAlignment="Center" Width="780" Height="30" VerticalAlignment="Top">
+            <MenuItem Header="Vehiculo" Height="26" Width="68" FontSize="14">
+                <MenuItem x:Name="insertVehiculo" Header="Introducir Vehiculo"/>
+            </MenuItem>
+            <MenuItem Header="Cliente" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694">
+                <MenuItem x:Name="insertCliente" Header="Introducir Cliente"/>
+            </MenuItem>
+            <MenuItem Header="Alquiler" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694">
+                <MenuItem x:Name="insertAlquiler" Header="Nuevo Alquiler"/>
+            </MenuItem>
+        </Menu>
+
+        <Button Content="Eliminar" HorizontalAlignment="Left" Height="22" Margin="740,371,0,0" VerticalAlignment="Top"/>
+        
+    </Grid>
+</Window>

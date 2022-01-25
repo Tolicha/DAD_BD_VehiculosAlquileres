@@ -10,22 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Tarea_2._1.Logica;
 
-namespace Tarea_2._1.Vista
+namespace Tarea_2._1
 {
     /// <summary>
-    /// Lógica de interacción para PaginaAlquiler.xaml
+    /// Lógica de interacción para WindowAlquiler.xaml
     /// </summary>
-    public partial class PaginaAlquiler : Page
+    public partial class WindowAlquiler : Window
     {
         private LogicaAlquiler logicaAlquiler;
-        public PaginaAlquiler(LogicaAlquiler logica)
+        public WindowAlquiler()
         {
             InitializeComponent();
-            logicaAlquiler = logica;
+            logicaAlquiler = new LogicaAlquiler();
             DatagridAlquiler.DataContext = logicaAlquiler;
         }
     }
