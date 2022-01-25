@@ -116,14 +116,33 @@ namespace Tarea_2._1.Dto
             get
             {
                 string result = "";
-                if (columnName == "Matricula")
+                if (columnName == "Nif")
                 {
-                    if (string.IsNullOrEmpty(Nombre))
+                    if (string.IsNullOrEmpty(nif))
+                        result = "Debe introducir el NIF del cliente";
+                }
+                if (columnName == "Nombre")
+                {
+                    if (string.IsNullOrEmpty(nombre))
                         result = "Debe introducir el nombre del cliente";
+                }
+                if (columnName == "Teléfono")
+                {
+                    if (string.IsNullOrEmpty(telefono))
+                        result = "Debe introducir el teléfono  del cliente";
+                }
+                if (columnName == "Email")
+                {
+                    if (string.IsNullOrEmpty(email))
+                        result = "Debe introducir el email del cliente";
+                }
+                if (columnName == "Fecha de Nacimiento")
+                {
+                    //if (string.IsNullOrEmpty())
+                    //    result = "Debe introducir la fecha de nacimiento del cliente";
                 }
                 return result;
             }
-
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

@@ -61,8 +61,30 @@ namespace Tarea_2._1.Dto
                 this.PropertyChanged(this, new PropertyChangedEventArgs("fechaCaducidad"));
             }
         }
-        public string Error => throw new NotImplementedException();
-        public string this[string columnName] => throw new NotImplementedException();
+        public string Error { get { return ""; } }
+        public string this[string columnName]
+        {
+            get
+            {
+                string result = "";
+                if (columnName == "Tipo de Carnet")
+                {
+                    if (string.IsNullOrEmpty(tipoCarnet))
+                        result = "Debe introducir el tipo del carnet";
+                }
+                if (columnName == "Fecha de Expedición")
+                {
+                    //if (string.IsNullOrEmpty())
+                    //    result = "Debe introducir la fecha de expedición del carnet";
+                }
+                if (columnName == "Fecha de Caducidad")
+                {
+                    //if (string.IsNullOrEmpty())
+                    //    result = "Debe introducir la fecha de caducidad del carnet";
+                }
+                return result;
+            }
+        }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
