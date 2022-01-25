@@ -10,7 +10,7 @@
 
     <Grid>
 
-        <DataGrid x:Name="DatagridAlquiler" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaAlquileres}" RenderTransformOrigin="0.572,0.512">
+        <DataGrid x:Name="DatagridAlquiler" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaAlquileres}" RenderTransformOrigin="0.572,0.512" Margin="0,56,0,0">
 
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Fecha Inicio" Binding="{Binding Path = FechaInicio, StringFormat={}{0:dd/MM/yyyy}}" />
@@ -25,6 +25,7 @@
             </DataGrid.Columns>
             
         </DataGrid>
-        
+        <Label Content="Lista de Alquileres" HorizontalAlignment="Left" Margin="61,10,0,0" VerticalAlignment="Top" FontSize="18"/>
+
     </Grid>
 </Page>
