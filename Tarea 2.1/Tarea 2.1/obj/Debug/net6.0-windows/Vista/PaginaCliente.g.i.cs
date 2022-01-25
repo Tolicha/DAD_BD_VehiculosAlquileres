@@ -61,7 +61,7 @@ namespace Tarea_2._1 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Tarea 2.1;V1.0.0.0;component/vista/paginacliente.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Tarea 2.1;component/vista/paginacliente.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vista\PaginaCliente.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

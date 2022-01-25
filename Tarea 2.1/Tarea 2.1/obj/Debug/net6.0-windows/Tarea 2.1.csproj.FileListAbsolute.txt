@@ -6,12 +6,10 @@ C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERF
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\bin\Debug\net6.0-windows\Tarea 2.1.pdb
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Tarea 2.1.csproj.AssemblyReference.cache
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\WindowVehiculo.g.cs
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Tarea 2.1_MarkupCompile.cache
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Tarea 2.1_MarkupCompile.lref
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\WindowVehiculo.baml
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Tarea 2.1.g.resources
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Tarea 2.1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Tarea 2.1.AssemblyInfoInputs.cache
@@ -56,10 +54,8 @@ C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERF
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\PaginaVehiculo.baml
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\CrearCliente.g.cs
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\PaginaCliente.g.cs
-C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\WindowCliente.g.cs
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\CrearCliente.baml
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\PaginaCliente.baml
-C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\WindowCliente.baml
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\Sobremesa\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\CrearCliente.g.cs
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\Sobremesa\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\PaginaCliente.g.cs
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\Sobremesa\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\CrearCliente.baml
@@ -105,3 +101,5 @@ C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-wi
 C:\Users\Javier RB\Documents\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Tarea 2.1.genruntimeconfig.cache
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\Sobremesa\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\CrearAlquiler.g.cs
 C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\Sobremesa\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\CrearAlquiler.baml
+C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\CrearAlquiler.g.cs
+C:\Users\marci\OneDrive\Documentos\2 DAM\DAD Desarrollo De Interfaces\UT2 INTERFACES A PARTIR DE DOCUMENTOS XML\Tarea 2.1\DADTarea2-1\Tarea 2.1\Tarea 2.1\obj\Debug\net6.0-windows\Vista\CrearAlquiler.baml
