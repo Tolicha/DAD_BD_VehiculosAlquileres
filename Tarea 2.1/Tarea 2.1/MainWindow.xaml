@@ -22,10 +22,10 @@
                 <MenuItem x:Name="deleteCliente" Header="Eliminar Cliente" Click="deleteCliente_Click"/>
             </MenuItem>
             <MenuItem Header="_Alquiler" Height="26" Width="71" FontSize="14" RenderTransformOrigin="1.648,0.694">
-                <MenuItem x:Name="listAlquiler" Header="Lista de Alquileres"/>
-                <MenuItem x:Name="insertAlquiler" Header="Nuevo Alquiler"/>
-                <MenuItem x:Name="updateAlquiler" Header="Modificar Alquiler"/>
-                <MenuItem x:Name="deleteAlquiler" Header="Eliminar Alquiler"/>
+                <MenuItem x:Name="listAlquiler" Header="Lista de Alquileres" Click="listAlquiler_Click"/>
+                <MenuItem x:Name="insertAlquiler" Header="Nuevo Alquiler" Click="insertAlquiler_Click"/>
+                <MenuItem x:Name="updateAlquiler" Header="Modificar Alquiler" Click="updateAlquiler_Click"/>
+                <MenuItem x:Name="deleteAlquiler" Header="Eliminar Alquiler" Click="deleteAlquiler_Click"/>
             </MenuItem>
         </Menu>
         <Frame x:Name="framePrincipal" Margin="0,59,0,0" HorizontalAlignment="Center" Width="714" Height="350" VerticalAlignment="Top" NavigationUIVisibility="Hidden"/>
