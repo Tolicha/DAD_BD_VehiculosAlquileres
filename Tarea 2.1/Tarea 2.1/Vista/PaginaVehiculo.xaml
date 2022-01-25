@@ -9,7 +9,7 @@
       Title="PaginaVehiculo">
 
     <Grid>
-        <DataGrid x:Name="DatagridVehiculo" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaVehiculos}" RenderTransformOrigin="0.572,0.512" Margin="0,60,10,0">
+        <DataGrid x:Name="DatagridVehiculo" AutoGenerateColumns="False" CanUserAddRows="False" ItemsSource="{Binding Path=listaVehiculos}" RenderTransformOrigin="0.572,0.512" Margin="0,60,10,0">
 
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Marca" Binding="{Binding Path = Marca}" />

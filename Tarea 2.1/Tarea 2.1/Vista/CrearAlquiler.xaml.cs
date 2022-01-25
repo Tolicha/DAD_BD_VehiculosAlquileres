@@ -108,8 +108,8 @@ namespace Tarea_2._1.Vista
                 }
             }
             //PARA ESTABLECER ALQUILADO Y FECHA ITV
-            this.alquiler.FechaInicio = (DateTimeOffset)calendarioInicio.SelectedDate;
-            this.alquiler.FechaFin = (DateTimeOffset)calendarioFin.SelectedDate;
+            this.alquiler.FechaInicio = (DateTimeOffset) calendarioInicio.SelectedDate;
+            this.alquiler.FechaFin = (DateTimeOffset) calendarioFin.SelectedDate;
 
             if (todoRiesgo.IsChecked == true)
                 this.alquiler.TipoSeguro = "Todo riesgo";

@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PaginaCliente">
     <Grid>
-        <DataGrid x:Name="DatagridCliente" AutoGenerateColumns="False" ItemsSource="{Binding Path=listaClientes}" RenderTransformOrigin="0.572,0.512" Margin="0,77,10,10">
+        <DataGrid x:Name="DatagridCliente" AutoGenerateColumns="False" CanUserAddRows="False" ItemsSource="{Binding Path=listaClientes}" RenderTransformOrigin="0.572,0.512" Margin="0,77,10,10">
 
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nombre" Binding="{Binding Path = Nombre}" />
